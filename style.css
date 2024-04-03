@@ -1,0 +1,45 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f8f8;
+}
+
+.social {
+  background-color: #a6a182;
+  color: #f8f8f8;
+}
+
+.navbar {
+  font-size: 19px;
+  background-color: #ffffff;
+}
+.nav-item button {
+  background-color: #a6a182;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav-item button:hover {
+  background-color: black;
+  color: white;
+}
+
+.hero-image1-border {
+  width: 650px;
+  height: 775px;
+  position: absolute;
+  right: 255px;
+  top: -50px;
+  border: 1px solid #a6a182;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.hero-image2-border {
+  width: 300px;
+  height: 365px;
+  position: absolute;
+  left: 370px;
+  top: 350px;
+  border: 1px solid #a6a182;
+  border-radius: 5px;
+  z-index: -1;
+}
