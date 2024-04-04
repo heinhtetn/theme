@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f8f8f8;
-  height: 10000px;
+  overflow-x: hidden;
 }
 
 .social {
@@ -123,3 +123,166 @@ body {
   opacity: 1;
 }
 
+.achi-button{
+  border: solid 1px #a6a182;
+  transition: 0.5s ease;
+}
+
+.achi-button:hover{
+  background-color: #a6a182;
+  color: white;
+}
+
+.achi-counter
+{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.achi-item{
+  border: none;
+}
+
+.small-heading
+{
+  color: #a6a182;
+}
+
+.review-text{
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/* star rating */
+.rate {
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+/* rating end */
+
+.team-member-name{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.member-info{
+  margin-top: -105px;
+}
+
+.accordion-item{
+  width: 600px;
+  background-color: white;
+  color: black;
+}
+
+.accordion-text{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.accordion-button{
+  border: none;
+}
+
+.accordion-item.active {
+  background-color: #a6a182;
+}
+
+.accordion-item.active .accordion-header button{
+  border: solid 1px #a6a182;
+}
+.accordion-item.active .accordion-button {
+  color: white;
+}
+.price-container{
+  margin-top: -30px;
+  border: none;
+}
+.price-title{
+  font-size: 24px;
+  font-weight: 600;
+}
+.price-tag{
+  background-color: #a6a182;
+  color: white;
+  width: 110px;
+  border-radius: 5px;
+}
+.price{
+  font-size: 20px;
+  font-weight: 600;
+
+}
+.news-item{
+  width: 400px;
+}
+.news-image{
+  width: 350px!important;
+  border-radius: 5px;
+}
+.news-info{
+  margin-top: -50px;
+  margin-left: 50px;
+}
+
+.news-title{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.news-button{
+  border: none;
+  background-color: white;
+}
+
+footer{
+  background-color: black;
+  margin-top: 120px;
+  color: white;
+}
+
+.footer-title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.footer-list{
+  list-style: none;
+}
+.contact-info{
+  font-size: 21px;
+  font-weight: 600;
+}
+.copyright-container{
+  padding-top: 25px;
+  padding-bottom: 10px;
+  background-color:rgb(34, 33, 33);
+}
