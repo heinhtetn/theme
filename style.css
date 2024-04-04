@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f8f8f8;
+  height: 10000px;
 }
 
 .social {
@@ -26,7 +27,7 @@ body {
   width: 650px;
   height: 775px;
   position: absolute;
-  right: 255px;
+  right: 185px;
   top: -50px;
   border: 1px solid #a6a182;
   border-radius: 5px;
@@ -43,3 +44,82 @@ body {
   border-radius: 5px;
   z-index: -1;
 }
+
+.aboutus-para{
+  line-height: 30px;
+  
+}
+
+.readmore-button{
+  background-color: #a6a182;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.readmore-button:hover{
+  background-color: black;
+  color: white;
+}
+
+.heading
+{
+  font-size: 55px; 
+  font-weight: 700
+}
+
+.service-item{
+  padding-left: 120px;
+}
+
+.work-item
+{
+  background-image: url(images/process-bg.jpg);
+  width: 100%;
+  height: 450px;
+  background-size: cover; 
+  position: relative;
+  opacity: 0;
+  border: #ffffff;
+  overflow: hidden;
+}
+
+.work-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  transition: opacity 0.5s ease;
+}
+
+.work-item-text{
+  position: absolute;
+  margin-top: -450px;
+  transition: color 0.5s ease;
+}
+.work-number{
+  font-size: 60px;
+  color: #a6a182;
+}
+
+.work-item:hover::before{
+  opacity: 1;
+}
+
+.work-process:hover .work-item-text{
+  color: white;
+  font-weight: 500;
+}
+
+.work-process:hover .work-number
+{
+  color: white;
+
+}
+
+.work-process:hover .work-item{
+  opacity: 1;
+}
+
