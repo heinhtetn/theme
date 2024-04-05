@@ -1,5 +1,11 @@
+:root {
+  --theme-color: rgb(166, 161, 130);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  /* background-color: #f8f8f8; */ /* mnm */
+  margin: 0; /* mnm */
   background-color: #f8f8f8;
   overflow-x: hidden;
 }
@@ -44,6 +50,114 @@ body {
   border-radius: 5px;
   z-index: -1;
 }
+
+/* general */
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 100px auto 0 auto;
+}
+
+.theme-color {
+  background-color: var(--theme-color);
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+/* contact */
+
+/* .hero div h1 {
+  font-size: 68px;
+} */
+
+.banner {
+  position: relative;
+  height: 350px;
+}
+
+.banner div {
+  position: absolute;
+  top: 150px;
+  left: 15%;
+}
+
+.banner-text {
+  font-size: 68px;
+}
+
+@media screen and (max-width: 990px) {
+  .banner {
+    height: 250px;
+  }
+
+  .banner div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner-text {
+    font-size: 50px;
+  }
+
+  .banner-breads {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .banner-text {
+    font-size: 35px;
+  }
+
+  .banner-breads {
+    font-size: 14px;
+  }
+}
+
+
+.contact-info {
+  background-color: #f8f8f8;
+}
+
+small {
+  font-size: 13px !important ;
+  color: rgb(84, 89, 95) !important;
+}
+
+iframe {
+  min-height: 400px;
+}
+
+.get-in-touch {
+  position: relative;
+}
+
+.get-in-touch-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.get-in-touch img {
+  min-height: 550px;
+}
+
+@media screen and (max-width: 990px) {
+  .get-in-touch-absolute {
+    width: 100%;
+  }
+}
+
+
 
 .aboutus-para{
   line-height: 30px;
