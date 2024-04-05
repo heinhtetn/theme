@@ -31,12 +31,13 @@
 <body>
     <header>
         <section>
-            <div class="row">
+            <div class="row" style="background-color: #f8f8f8;">
                 <div class="col-5 offset-2 address p-2">
                     <i class="fa-solid fa-location-dot me-2" style="color: #a6a182"></i>
                     6391 Elgin St. Celina, 10299
                 </div>
                 <div class="col-5 social p-2">
+                    <div class="dummy"></div>
                     <div class="d-flex">
                         <span class="ps-5">info@example.com</span>
                         <div class="ms-5">
@@ -49,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-white">
             <div class="container">
                 <a class="navbar-brand" href="">LOGO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -88,7 +89,8 @@
                             <i class="fa-solid fa-magnifying-glass" style="margin-top: 11px"></i>
                         </li>
                         <li class="nav-item">
-                            <button class="btn p-3">Get A Quote</button>
+                            <button class="btn p-3">Get A Quote<i
+                                class="fa-solid fa-arrow-right-long ms-2"></i></button>
                         </li>
                     </ul>
                 </div>
@@ -98,21 +100,22 @@
 
     <!-- content -->
     <section style="
-        margin-top: 180px;
         position: relative;
         z-index: 1;
         background-color: #f8f8f8;
+        height: 600px;
       ">
         <div class="col-5 offset-2">
             <h1 class="text-end" style="
-            font-size: 65px;
+            top: 150px;
+            font-size: 50px;
             font-weight: 700;
             position: relative;
             z-index: 1;
           ">
                 Discovered Inspired Interior Design
             </h1>
-            <div class="col-5 text-end offset-5 mt-4 position: relative; z-index: 1;">
+            <div class="col-5 text-end offset-5 position: relative; z-index: 1;" style="padding-top: 150px;">
                 <span style="line-height: 30px; position: relative; z-index: 1">Lorem ipsum dolor sit amet natoqu
                     consectetur adipiscing elit
                     torquent nu nascetu cubilia tempor lacus
@@ -120,22 +123,23 @@
             </div>
 
             <img src="images/01.jpg" class="hero-image1" style="
-            margin-top: -350px;
-            margin-left: 715px;
+            margin-top: -260px;
+            margin-left: 600px;
             z-index: 0;
             border-radius: 10px;
-            width: 650px;
+            width: 630px;
           " alt="" />
             <div class="hero-image1-border"></div>
         </div>
 
-        <img src="images/02.jpg" style="margin-top: -380px; margin-left: 350px" alt="" />
+        <img src="images/02.jpg" style="margin-top: -620px; margin-left: 350px" alt="" />
         <div class="hero-image2-border"></div>
     </section>
     <!-- about us -->
-    <div class="container-fluid" style="margin-top: 130px">
-        <div class="row">
-            <div class="col-4 offset-2 me-5">
+    <div class="container-fluid" style="margin-top: 430px">
+        <div class="row" style="padding-left: 180px;padding-right: 180px;">
+            
+            <div class="col-6">
                 <div class="row">
                     <div class="col-4 p-5 rounded" style="background-color: #a6a182; width: 250px;">
                         <h1 class="text-white" style="font-size: 50px; font-weight: 700">
@@ -148,16 +152,19 @@
                     <div class="col-4">
                         <img src="images/04.jpg" style="height: 250px; border-radius: 5px" alt="" />
                     </div>
-                    <div>
-                        <img src="images/03.jpg" class="mt-4 rounded" alt="" />
+                </div>
+                <div class="row">
+                    <div class="col-10 p-0">
+                        <img src="images/03.jpg" class="mt-4 rounded" alt="" />  
                     </div>
+                    <div class="col-2"></div>
                 </div>
             </div>
-            <div class="col-4 mt-5 ms-4">
+            <div class="col-6 mt-5">
                 <h5 class="small-heading">About Us</h5>
-                <h1 class="heading">
+                <h3 class="heading">
                     Design Your Space To Elevate Your Life
-                </h1>
+                </h3>
                 <p class="aboutus-para">
                     Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu
                     nascetu cubilia tempor lacus natoque quis auctor mattis luctus
@@ -176,43 +183,46 @@
     </div>
 
     <!-- latest service -->
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
+        
         <div class="row">
-            <div class="col-6 offset-2" style="padding-top: 180px;">
+            <img src="images/bg-shape.jpg" class="shape" alt="" style="padding-left: 0;padding-right: 0;">
+            <div class="col-6 shape-content" style="padding-top: 60px;margin-left: 150px;">
                 <h5 class="small-heading">Latest Service</h5>
                 <h1 class="heading">
                     Creating Spaces The That
                     A Inspire
                 </h1>
                 <div class="d-flex" style="margin-top: 90px;">
-                    <div>
-                        <div style="background-color: #a6a182; width: 53px; height: 48px; border-radius: 5px;"><i
+                    <div class="service-item" style="margin-right: 20px;">
+                        <div class="icon" style="background-color: #a6a182; width: 60px; height: 52px; border-radius: 5px;"><i
+                                class="fa-solid fa-warehouse p-2" style="color: white; font-size: 35px;"></i></div><br>
+                        <p style="font-size: 21px; font-weight: 600;">Architecture Plus</p>
+                        <p>This category focuses on <br> the design and man</p>
+                        <button style="border: none; background-color: white;">Read More <i
+                                class="fa-solid fa-arrow-right-long ms-2"></i></button>
+                    </div>
+                    <div class="service-item" id="card2" style="margin-right: 20px;">
+                        <div class="icon" style="background-color: #a6a182; width: 53px; height: 48px; border-radius: 5px;"><i
                                 class="fa-solid fa-warehouse p-2" style="color: white; font-size: 30px;"></i></div><br>
-                        <p style="font-size: 23px; font-weight: 600;">Architecture Plus</p>
+                        <p style="font-size: 21px; font-weight: 600;">Urban Oasis</p>
                         <p>This category focuses on <br> the design and man</p>
                         <button style="border: none; background-color: white;">Read More <i
                                 class="fa-solid fa-arrow-right-long ms-2"></i></button>
                     </div>
                     <div class="service-item">
-                        <div style="background-color: #a6a182; width: 53px; height: 48px; border-radius: 5px;"><i
+                        <div class="icon" style="background-color: #a6a182; width: 53px; height: 48px; border-radius: 5px;"><i
                                 class="fa-solid fa-warehouse p-2" style="color: white; font-size: 30px;"></i></div><br>
-                        <p style="font-size: 23px; font-weight: 600;">Urban Oasis</p>
-                        <p>This category focuses on <br> the design and man</p>
-                        <button style="border: none; background-color: white;">Read More <i
-                                class="fa-solid fa-arrow-right-long ms-2"></i></button>
-                    </div>
-                    <div class="service-item">
-                        <div style="background-color: #a6a182; width: 53px; height: 48px; border-radius: 5px;"><i
-                                class="fa-solid fa-warehouse p-2" style="color: white; font-size: 30px;"></i></div><br>
-                        <p style="font-size: 23px; font-weight: 600;">Blueprint Builders</p>
+                        <p style="font-size: 21px; font-weight: 600;">Blueprint Builders</p>
                         <p>This category focuses on <br> the design and man</p>
                         <button style="border: none; background-color: white;">Read More <i
                                 class="fa-solid fa-arrow-right-long ms-2"></i></button>
                     </div>
                 </div>
+                
             </div>
-            <div class="col-4">
-                <img src="images/05.jpg" alt="">
+            <div class="col-4 shape-content" style="margin-left: 1140px;">
+                <img src="images/05.jpg" height="662px" alt="">
             </div>
         </div>
     </div>
@@ -225,8 +235,8 @@
             Your Space The A Most <br>
             Elevate Without Life
         </h1>
-        <div class="row">
-            <div class="col-3 offset-2 work-process">
+        <div class="row d-flex justify-content-center">
+            <div class="col-3 work-process">
                 <div class="card work-item"></div>
                 <div class="p-5 work-item-text col-3">
                     <span class="work-number">01</span>
@@ -281,9 +291,10 @@
     </div>
 
     <!-- our achievement -->
-    <div class="container-fluid" style="margin-top: 120px;">
+    <div class="container-fluid" style="margin-top: 120px;background-color: #f8f8f8;height: 700px;">
         <div class="row">
-            <div class="col-5 offset-2">
+            <img src="images/shape.png" class="shape-image" alt="" style="width: 1000px;height:700px;opacity: 0.1;">
+            <div class="col-5 offset-1 shape-contentA">
                 <h5 class="small-heading">Our Achievement</h5>
                 <h1 class="heading">Building Dreams One <br>
                     Room At A Time</h1>
@@ -296,7 +307,7 @@
                 <button class="achi-button p-4 rounded mt-4">Read More <i
                         class="fa-solid fa-arrow-right-long ms-2"></i></button>
             </div>
-            <div class="col-5">
+            <div class="col-5 shape-contentB">
                 <div class="d-flex flex-wrap">
                     <div class="card col-5 p-5 text-center achi-item shadow me-4 mb-3">
                         <i class="fi fi-rs-window-frame" style="font-size: 50px;color: #a6a182;"></i>
@@ -324,29 +335,29 @@
     </div>
 
     <!-- latest portfolio -->
-    <div class="offset-2">
+    <div class="offset-1 mt-3">
         <h5 class="small-heading">Latest Portfolio</h5>
         <h1 class="heading">Transforming Houses <br>
             Into Homes</h1>
 
         <div id="logos" class="owl-carousel">
             <div class="item">
-                <img src="images/10.jpg" alt="">
+                <img src="images/10.jpg" alt="" class="portfolio-image">
             </div>
             <div class="item">
-                <img src="images/20.jpg" alt="">
+                <img src="images/20.jpg" alt="" class="portfolio-image">
             </div>
             <div class="item">
-                <img src="images/30.jpg" alt="">
+                <img src="images/30.jpg" alt="" class="portfolio-image">
             </div>
             <div class="item">
-                <img src="images/10.jpg" alt="">
+                <img src="images/10.jpg" alt="" class="portfolio-image">
             </div>
             <div class="item">
-                <img src="images/20.jpg" alt="">
+                <img src="images/20.jpg" alt="" class="portfolio-image">
             </div>
             <div class="item">
-                <img src="images/30.jpg" alt="">
+                <img src="images/30.jpg" alt="" class="portfolio-image">
             </div>
         </div>
     </div>
@@ -813,7 +824,7 @@
 
             $('#logos').owlCarousel({
                 loop: true,
-                margin: 10,
+                margin: 30,
                 autoplay: true,
                 autoplayTimeout: 3000,
                 autoplaySpeed: 1000,
@@ -826,7 +837,7 @@
                         items: 2
                     },
                     1000: {
-                        items: 5
+                        items: 3
                     }
                 },
             })

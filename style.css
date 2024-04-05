@@ -4,13 +4,27 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* background-color: #f8f8f8; */ /* mnm */
-  margin: 0; /* mnm */
-  background-color: #f8f8f8;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.address{
+  background-color: #f8f8f8;
+}
+.dummy{
+  position: absolute;
+  width: 40px;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  background-color: #a6a182;
+  transform: skewX(-45deg);
+  
 }
 
 .social {
+  position: relative;
   background-color: #a6a182;
   color: #f8f8f8;
 }
@@ -31,10 +45,10 @@ body {
 
 .hero-image1-border {
   width: 650px;
-  height: 775px;
+  height: 780px;
   position: absolute;
   right: 185px;
-  top: -50px;
+  top: 100px;
   border: 1px solid #a6a182;
   border-radius: 5px;
   z-index: -1;
@@ -42,10 +56,10 @@ body {
 
 .hero-image2-border {
   width: 300px;
-  height: 365px;
+  height: 355px;
   position: absolute;
   left: 370px;
-  top: 350px;
+  top: 400px;
   border: 1px solid #a6a182;
   border-radius: 5px;
   z-index: -1;
@@ -177,13 +191,57 @@ iframe {
 
 .heading
 {
-  font-size: 55px; 
+  font-size: 45px; 
   font-weight: 700
 }
 
-.service-item{
-  padding-left: 120px;
+.shape{
+  position: relative;
 }
+.shape-content{
+  position: absolute;
+}
+
+
+
+.service-item{
+  background-color: white;
+  padding-top:20px ;
+  padding-left: 10px;
+  padding-right: 50px;
+  padding-bottom:0px ;
+  width: 500px;
+  height: 200px;
+  position: relative;
+  box-shadow: 3px 3px 3px #f8f8f8;
+}
+.icon{
+  position: absolute;
+  top: -25px;
+  left: 25px;
+}
+
+#card2{
+  margin-top: -20px;
+}
+
+.shape-image{
+  position: relative;
+}
+.shape-contentA{
+  margin-top: 50px;
+  position: absolute;
+}
+.shape-contentB{
+  position: absolute;
+  margin-top: 50px;
+  left: 900px;
+}
+
+.portfolio-image{
+  height: 630px;
+}
+
 
 .work-item
 {
