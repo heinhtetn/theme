@@ -242,6 +242,15 @@ iframe {
   height: 630px;
 }
 
+.light{
+  margin-top: -370px;
+  margin-left: 806px;
+}
+
+.price-plan{
+  margin-right: 60px;
+}
+
 
 .work-item
 {
@@ -360,7 +369,9 @@ iframe {
   color: #c59b08;
 }
 /* rating end */
-
+.team-members{
+  margin-right:50px ;
+}
 .team-member-name{
   font-size: 24px;
   font-weight: 600;
