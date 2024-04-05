@@ -564,6 +564,20 @@ iframe {
 .news-item{
   width: 400px;
 }
+.news-info:hover{
+  border-bottom: 3px solid #a6a182;
+}
+.process:after{
+  display: block;
+  height: 1px;
+    width: 400px;
+    background: #000;
+    content: "";
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
 .news-image{
   width: 350px!important;
   border-radius: 5px;
@@ -581,6 +595,9 @@ iframe {
 .news-button{
   border: none;
   background-color: white;
+}
+.news-button:hover{
+  color: #a6a182;
 }
 
 footer{
