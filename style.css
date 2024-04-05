@@ -1,5 +1,7 @@
 :root {
   --theme-color: rgb(166, 161, 130);
+  --secondary-color: #f8f8f8;
+  --font-color: rgb(84, 89, 95);
 }
 
 body {
@@ -67,14 +69,22 @@ body {
 
 /* general */
 
-main {
-  width: 90%;
-  max-width: 1000px;
-  margin: 100px auto 0 auto;
+.content-wrapper {
+  width: 80%;
+  max-width: 1050px;
+  margin: 80px auto 0 auto;
 }
 
 .theme-color {
   background-color: var(--theme-color);
+}
+
+.secondary-color {
+  background-color: var(--secondary-color);
+}
+
+.font-color {
+  color: var(--font-color);
 }
 
 .fs-14 {
@@ -85,11 +95,93 @@ main {
   font-size: 16px;
 }
 
-/* contact */
+.fs-24 {
+  font-size: 24px;
+}
 
-/* .hero div h1 {
-  font-size: 68px;
-} */
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-35 {
+  font-size: 35px;
+}
+
+footer:not(.home-footer) {
+  margin-top: 200px;
+  padding-top: 150px;
+  position: relative;
+}
+
+.services-footer {
+  margin-top: 0  !important;
+}
+
+.footer-absolute {
+  position: absolute;
+  right: 10vw;
+  left: 10vw;
+  top: -100px;
+  height: 200px;
+}
+
+.circle-border {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+}
+
+.guy-standing {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .circle-border {
+    display: none;
+  }
+
+  .guy-standing {
+    display: none;
+  }
+
+  .footer-absolute div {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer-absolute {
+    top: -150px;
+    height: 300px;
+  }
+
+  .footer-absolute div {
+    padding: 25px;
+    flex-direction: column;
+  }
+
+  .footer-absolute div p {
+    text-align: center;
+    width: 100% !important;
+    font-size: 30px;
+  }
+
+
+}
+
+/* contact */
 
 .banner {
   position: relative;
@@ -136,14 +228,21 @@ main {
   }
 }
 
+.contact-icon {
+  background-color: #f0efec;
+  color: #a6a182;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 14px;
+}
 
 .contact-info {
   background-color: #f8f8f8;
-}
-
-small {
-  font-size: 13px !important ;
-  color: rgb(84, 89, 95) !important;
 }
 
 iframe {
@@ -169,6 +268,43 @@ iframe {
   .get-in-touch-absolute {
     width: 100%;
   }
+}
+
+/* services */
+
+.service {
+  padding: 35px 20px 20px 20px;
+  position: relative;
+}
+
+.service-icon {
+  position: absolute;
+  left: 25px;
+  top: -25px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: var(--theme-color);
+}
+
+.appointment-section {
+  width: 90%;
+  max-width: 1050px;
+  margin: 50px auto;
+}
+
+/* service detail */
+
+.fa-circle-chevron-right {
+  font-size: 18px;
+  color: var(--theme-color);
+}
+
+.need-help {
+  background-image: url('/images/post-bg.jpg');
+}
+
+.need-help-content {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 
