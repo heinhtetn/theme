@@ -93,8 +93,9 @@
         <section class="banner">
             <img class="w-100 h-100" src="/images/contact-banner.jpg" alt="contact-banner">
             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="text-white">
-                <h1  x-show="shown" x-transition class="slideup fw-bold banner-text text-center">Contact Us</h1>
-                <p  x-show="shown" x-transition class="slideup banner-breads">Home <i class="fa-solid fa-chevron-right fa-xs mx-1"></i> Contact Us</p>
+                <h1 x-show="shown" x-transition class="slideup-1 fw-bold banner-text text-center">Contact Us</h1>
+                <p x-show="shown" x-transition class="slideup-1 banner-breads">Home <i
+                        class="fa-solid fa-chevron-right fa-xs mx-1"></i> Contact Us</p>
             </div>
         </section>
         <div class="content-wrapper">
@@ -104,52 +105,66 @@
                     style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="contact-info w-100 w-lg-50 p-5 secondary-color">
-                    <div>
+                    <div class="slideup-1">
                         <h2 class="fs-1 fw-bold">Contact Info</h2>
-                        <small class="font-color fs-14">Cloud computing is a model for delivering on-demand computing
+                        <small class="sfont-color fs-14">Cloud computing is a model for delivering on-demand computing
                             resources over the
                             internet. It
                             can benefit your business</small>
                     </div>
                     <div class="mt-4">
                         <div class="row g-2">
-                            <div class="col-12 col-lg-6 d-flex flex-column align-items-start gap-3 p-2">
-                                <div class="contact-icon">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <h3 class="m-0 fs-5 fw-semibold">Phone</h3>
-                                <div class="font-color fs-14">
-                                    <small>012 345 678 9101</small><small>(208) 555-0112</small>
-
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6 d-flex flex-column align-items-start gap-3 p-2">
-                                <div class="contact-icon">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <h3 class="m-0 fs-5 fw-semibold">Email</h3>
-                                <div>
-                                    <small class="font-color fs-14">info@example.com</small>
+                            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
+                                <div x-show="shown" x-transition>
+                                    <div class="slideup-1 d-flex flex-column align-items-start gap-3">
+                                        <div class="contact-icon">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <h3 class=" m-0 fs-5 fw-semibold">Phone</h3>
+                                        <div>
+                                            <small class="font-color fs-14">012 345 678 9101</small>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 d-flex flex-column align-items-start gap-3 p-2">
-                                <div class="contact-icon">
-                                    <i class="fa-solid fa-location-dot"></i>
-
-                                </div>
-                                <h3 class="m-0 fs-5 fw-semibold">Location</h3>
-                                <div>
-                                    <small class="font-color fs-14">4517 Washington Ave. Manchester, Kentucky
-                                        39495</small>
+                            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
+                                <div x-show="shown" x-transition>
+                                    <div class="slideup-2 d-flex flex-column align-items-start gap-3">
+                                        <div class="contact-icon">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <h3 class=" m-0 fs-5 fw-semibold">Email</h3>
+                                        <div>
+                                            <small class="font-color fs-14">info@example.com</small>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 d-flex flex-column align-items-start gap-3 p-2">
-                                <div class="contact-icon">
-                                    <i class="fa-solid fa-link"></i>
+                            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
+                                <div x-show="shown" x-transition>
+                                    <div class="slideup-3 d-flex flex-column align-items-start gap-3">
+                                        <div class="contact-icon">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <h3 class=" m-0 fs-5 fw-semibold">Location</h3>
+                                        <div>
+                                            <small class="font-color fs-14">4517 Washington Ave. Manchester, Kentucky
+                                                39495</small>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h3 class="m-0 fs-5 fw-semibold">Website</h3>
-                                <div>
-                                    <small class="font-color fs-14">www.example.com</small>
+                            </div>
+                            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
+                                <div x-show="shown" x-transition>
+                                    <div class="slideup-4 d-flex flex-column align-items-start gap-3">
+                                        <div class="contact-icon">
+                                            <i class="fa-solid fa-link"></i>
+                                        </div>
+                                        <h3 class=" m-0 fs-5 fw-semibold">Website</h3>
+                                        <div>
+                                            <small class="font-color fs-14">www.example.com</small>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -159,33 +174,38 @@
             <section class="get-in-touch mt-5">
                 <img class="w-100" src="/images/get-in-touch.jpg" alt="a picture of a living room">
                 <div class="get-in-touch-absolute bg-white pt-4 pe-4 pb-4 rounded-2 rounded-top-0 rounded-start-0">
-                    <p class="fw-semibold" style="color: rgb(166, 161, 130)">Contact Us</p>
-                    <h2 class="fs-1 fw-bold mb-4">Get In Tounch</h2>
+                    <div x-data="{ shown: false }" x-intersect.once="shown = true">
+                        <p x-show="shown" x-transition class="slideup-1 fw-semibold" style="color: rgb(166, 161, 130)">
+                            Contact Us</p>
+                        <h2 x-show="shown" x-transition class="slideup-2 fs-1 fw-bold mb-4">Get In Tounch</h2>
+                    </div>
                     <form action="#" method="post">
                         <div class="row row-gap-3">
-                            <div class="col-6">
-                                <input class="form-control py-3 px-4 fs-14" type="text" name="name"
-                                    placeholder="Your Name">
+                            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-6">
+                                <input x-show="shown" x-transition class="slideup-1 form-control py-3 px-4 fs-14"
+                                    type="text" name="name" placeholder="Your Name">
                             </div>
-                            <div class="col-6">
-                                <input class="form-control py-3 px-4 fs-14" type="text" name='email'
-                                    placeholder="Your Email">
+                            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-6">
+                                <input x-show="shown" x-transition class="slideup-2 form-control py-3 px-4 fs-14"
+                                    type="text" name='email' placeholder="Your Email">
                             </div>
-                            <div class="col-6">
-                                <input class="form-control py-3 px-4 fs-14" type="text" name="phone"
-                                    placeholder="Phone Number">
+                            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-6">
+                                <input x-show="shown" x-transition class="slideup-2 form-control py-3 px-4 fs-14"
+                                    type="text" name="phone" placeholder="Phone Number">
                             </div>
-                            <div class="col-6">
-                                <input class="form-control py-3 px-4 fs-14" type="text" name='subject'
-                                    placeholder="Subject">
+                            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-6">
+                                <input x-show="shown" x-transition class="slideup-2 form-control py-3 px-4 fs-14"
+                                    type="text" name='subject' placeholder="Subject">
                             </div>
-                            <div class="col-12">
-                                <textarea class="form-control col-12 py-3 px-4 fs-14" name="message" rows="5"
+                            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12">
+                                <textarea x-show="shown" x-transition
+                                    class="slideup-2 form-control col-12 py-3 px-4 fs-14" name="message" rows="5"
                                     placeholder="Message here..."></textarea>
                             </div>
 
                             <div x-data="{ shown: false }" x-intersect.once="shown = true">
-                                <button x-show="shown" x-transition class="slideup hover-black-bg theme-color btn text-white px-4 py-3 fw-semibold fs-14">
+                                <button x-show="shown" x-transition
+                                    class="slideup-2 hover-black-bg theme-color btn text-white px-4 py-3 fw-semibold fs-14">
                                     Submit now <i class="fa-solid fa-arrow-right"></i>
                                 </button>
                             </div>
@@ -198,14 +218,17 @@
 
     <!-- footer -->
     <footer style="margin-top: 300px;">
-        <div class="footer-absolute theme-color d-flex justify-content-end">
-            <img class="circle-border" src="/images/circle-border.png" alt="circle border">
-            <img class="guy-standing" src="/images/guy-standing.png" alt="guy standing">
-            <div class="d-flex justify-content-evenly align-items-center w-75">
-                <p class="fs-35 fw-bold w-50">Crafting spaces that
-                    the reflect style</p>
-                <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
-                        class="fa-solid fa-arrow-right"></i></a>
+        <div x-data="{ shown: false }" x-intersect.once="shown = true"
+            class="footer-absolute theme-color d-flex justify-content-end">
+            <img x-show="shown" x-transition class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
+            <img x-show="shown" x-transition class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
+            <div x-show="shown" x-transition class="slideup-3 w-75">
+                <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
+                    <p class="fs-35 fw-bold w-50">Crafting spaces that
+                        the reflect style</p>
+                    <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
         <div class="row pt-5">
