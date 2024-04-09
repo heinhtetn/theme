@@ -92,9 +92,10 @@
     <main>
         <section class="banner">
             <img class="w-100 h-100" src="/images/contact-banner.jpg" alt="contact-banner">
-            <div class="text-white ">
-                <h1 class="fw-bold banner-text text-center">Service Details</h1>
-                <p class="banner-breads">Home <i class="fa-solid fa-chevron-right fa-xs mx-1"></i> Service Details</p>
+            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="text-white">
+                <h1 x-show="shown" class="slideup-1 fw-bold banner-text text-center">Service Detail</h1>
+                <p x-show="shown" class="slideup-1 banner-breads">Home <i
+                        class="fa-solid fa-chevron-right fa-xs mx-1"></i> Service Detail</p>
             </div>
         </section>
         <div class="content-wrapper">
@@ -223,14 +224,17 @@
 
     <!-- footer -->
     <footer style="margin-top: 300px;">
-        <div class="footer-absolute theme-color d-flex justify-content-end">
-            <img class="circle-border" src="/images/circle-border.png" alt="circle border">
-            <img class="guy-standing" src="/images/guy-standing.png" alt="guy standing">
-            <div class="d-flex justify-content-evenly align-items-center w-75">
-                <p class="fs-35 fw-bold w-50">Crafting spaces that
-                    the reflect style</p>
-                <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
-                        class="fa-solid fa-arrow-right"></i></a>
+        <div x-data="{ shown: false }" x-intersect.once="shown = true"
+            class="footer-absolute theme-color d-flex justify-content-end">
+            <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
+            <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
+            <div x-show="shown" class="slideup-3 w-75">
+                <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
+                    <p class="fs-35 fw-bold w-50">Crafting spaces that
+                        the reflect style</p>
+                    <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
         <div class="row pt-5">
@@ -318,6 +322,12 @@
             </div>
         </div>
     </div>
+    
+    <!-- Alpine Plugins -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Alpine Core -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/807f2d6ec6.js" crossorigin="anonymous"></script>
