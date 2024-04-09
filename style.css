@@ -290,6 +290,14 @@ footer:not(.home-footer) {
   animation: slideup-ani 1.5s ease-in-out;
 }
 
+.slideup-7 {
+  animation: slideup-ani 1.6s ease-in-out;
+}
+
+.slideup-8 {
+  animation: slideup-ani 1.7s ease-in-out;
+}
+
 @keyframes slideup-ani {
     0% {
         transform: translateY(25%);

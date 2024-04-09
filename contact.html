@@ -93,8 +93,8 @@
         <section class="banner">
             <img class="w-100 h-100" src="/images/contact-banner.jpg" alt="contact-banner">
             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="text-white">
-                <h1 x-show="shown" x-transition class="slideup-1 fw-bold banner-text text-center">Contact Us</h1>
-                <p x-show="shown" x-transition class="slideup-1 banner-breads">Home <i
+                <h1 x-show="shown" class="slideup-1 fw-bold banner-text text-center">Contact Us</h1>
+                <p x-show="shown" class="slideup-1 banner-breads">Home <i
                         class="fa-solid fa-chevron-right fa-xs mx-1"></i> Contact Us</p>
             </div>
         </section>
@@ -115,7 +115,7 @@
                     <div class="mt-4">
                         <div class="row g-2">
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
-                                <div x-show="shown" x-transition>
+                                <div x-show="shown">
                                     <div class="slideup-1 d-flex flex-column align-items-start gap-3">
                                         <div class="contact-icon">
                                             <i class="fa-solid fa-phone"></i>
@@ -128,7 +128,7 @@
                                 </div>
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
-                                <div x-show="shown" x-transition>
+                                <div x-show="shown">
                                     <div class="slideup-2 d-flex flex-column align-items-start gap-3">
                                         <div class="contact-icon">
                                             <i class="fa-solid fa-envelope"></i>
@@ -141,7 +141,7 @@
                                 </div>
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
-                                <div x-show="shown" x-transition>
+                                <div x-show="shown">
                                     <div class="slideup-3 d-flex flex-column align-items-start gap-3">
                                         <div class="contact-icon">
                                             <i class="fa-solid fa-location-dot"></i>
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
-                                <div x-show="shown" x-transition>
+                                <div x-show="shown">
                                     <div class="slideup-4 d-flex flex-column align-items-start gap-3">
                                         <div class="contact-icon">
                                             <i class="fa-solid fa-link"></i>
@@ -175,36 +175,36 @@
                 <img class="w-100" src="/images/get-in-touch.jpg" alt="a picture of a living room">
                 <div class="get-in-touch-absolute bg-white pt-4 pe-4 pb-4 rounded-2 rounded-top-0 rounded-start-0">
                     <div x-data="{ shown: false }" x-intersect.once="shown = true">
-                        <p x-show="shown" x-transition class="slideup-1 fw-semibold" style="color: rgb(166, 161, 130)">
+                        <p x-show="shown" class="slideup-1 fw-semibold" style="color: rgb(166, 161, 130)">
                             Contact Us</p>
-                        <h2 x-show="shown" x-transition class="slideup-2 fs-1 fw-bold mb-4">Get In Tounch</h2>
+                        <h2 x-show="shown" class="slideup-2 fs-1 fw-bold mb-4">Get In Tounch</h2>
                     </div>
                     <form action="#" method="post">
                         <div class="row row-gap-3">
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-6">
-                                <input x-show="shown" x-transition class="slideup-1 form-control py-3 px-4 fs-14"
+                                <input x-show="shown" class="slideup-1 form-control py-3 px-4 fs-14"
                                     type="text" name="name" placeholder="Your Name">
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-6">
-                                <input x-show="shown" x-transition class="slideup-2 form-control py-3 px-4 fs-14"
+                                <input x-show="shown" class="slideup-2 form-control py-3 px-4 fs-14"
                                     type="text" name='email' placeholder="Your Email">
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-6">
-                                <input x-show="shown" x-transition class="slideup-2 form-control py-3 px-4 fs-14"
+                                <input x-show="shown" class="slideup-2 form-control py-3 px-4 fs-14"
                                     type="text" name="phone" placeholder="Phone Number">
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-6">
-                                <input x-show="shown" x-transition class="slideup-2 form-control py-3 px-4 fs-14"
+                                <input x-show="shown" class="slideup-2 form-control py-3 px-4 fs-14"
                                     type="text" name='subject' placeholder="Subject">
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12">
-                                <textarea x-show="shown" x-transition
+                                <textarea x-show="shown"
                                     class="slideup-2 form-control col-12 py-3 px-4 fs-14" name="message" rows="5"
                                     placeholder="Message here..."></textarea>
                             </div>
 
                             <div x-data="{ shown: false }" x-intersect.once="shown = true">
-                                <button x-show="shown" x-transition
+                                <button x-show="shown"
                                     class="slideup-2 hover-black-bg theme-color btn text-white px-4 py-3 fw-semibold fs-14">
                                     Submit now <i class="fa-solid fa-arrow-right"></i>
                                 </button>
@@ -220,9 +220,9 @@
     <footer style="margin-top: 300px;">
         <div x-data="{ shown: false }" x-intersect.once="shown = true"
             class="footer-absolute theme-color d-flex justify-content-end">
-            <img x-show="shown" x-transition class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
-            <img x-show="shown" x-transition class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
-            <div x-show="shown" x-transition class="slideup-3 w-75">
+            <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
+            <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
+            <div x-show="shown" class="slideup-3 w-75">
                 <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
                     <p class="fs-35 fw-bold w-50">Crafting spaces that
                         the reflect style</p>

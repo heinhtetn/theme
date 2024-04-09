@@ -92,17 +92,18 @@
     <main>
         <section class="banner">
             <img class="w-100 h-100" src="/images/contact-banner.jpg" alt="contact-banner">
-            <div class="text-white">
-                <h1 class="fw-bold banner-text">Service</h1>
-                <p class="banner-breads">Home <i class="fa-solid fa-chevron-right fa-xs mx-1"></i> Service</p>
+            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="text-white">
+                <h1 x-show="shown" class="slideup-1 fw-bold banner-text text-center">Service</h1>
+                <p x-show="shown" class="slideup-1 banner-breads">Home <i
+                        class="fa-solid fa-chevron-right fa-xs mx-1"></i> Service</p>
             </div>
         </section>
         <div class="content-wrapper">
             <section class="row gx-4 gy-5">
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="service secondary-color">
+                <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div x-show="shown" class="slideup-1 service secondary-color">
                         <i class="service-icon fa-solid fa-hospital rounded-1"></i>
-                        <a class="hover-theme-color text-black text-decoration-none fs-20 fw-semibold">Architecture Plus</a>
+                        <a class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Architecture Plus</a>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design and
                             man
                         </p>
@@ -110,10 +111,10 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="service secondary-color">
+                <div x-data="{ shown: false }" x-intersect.once="shown = true" class=" col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div x-show="shown" class="slideup-2 service secondary-color">
                         <i class="service-icon fa-solid fa-bed rounded-1"></i>
-                        <a class="hover-theme-color text-black text-decoration-none fs-20 fw-semibold">Urban Oasis</a>
+                        <a class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Urban Oasis</a>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design and
                             man
                         </p>
@@ -121,10 +122,10 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="service secondary-color">
+                <div x-data="{ shown: false }" x-intersect.once="shown = true" class=" col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div x-show="shown" class="slideup-3 service secondary-color">
                         <i class="service-icon fa-solid fa-city rounded-1"></i>
-                        <a class="hover-theme-color text-black text-decoration-none fs-20 fw-semibold">Blueprint Builders</a>
+                        <a class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Blueprint Builders</a>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design and
                             man
                         </p>
@@ -132,10 +133,10 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="service secondary-color">
+                <div x-data="{ shown: false }" x-intersect.once="shown = true" class=" col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div x-show="shown" class="slideup-4 service secondary-color">
                         <i class="service-icon fa-solid fa-school rounded-1"></i>
-                        <p class="hover-theme-color text-black text-decoration-none fs-20 fw-semibold">Room Layout</p>
+                        <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Room Layout</p>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design and
                             man
                         </p>
@@ -143,10 +144,10 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="service secondary-color">
+                <div x-data="{ shown: false }" x-intersect.once="shown = true" class=" col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div x-show="shown" class="slideup-5 service secondary-color">
                         <i class="service-icon fa-solid fa-building rounded-1"></i>
-                        <p class="hover-theme-color text-black text-decoration-none fs-20 fw-semibold">Textile Design</p>
+                        <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Textile Design</p>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design and
                             man
                         </p>
@@ -154,10 +155,10 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="service secondary-color">
+                <div x-data="{ shown: false }" x-intersect.once="shown = true" class=" col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div x-show="shown" class="slideup-6 service secondary-color">
                         <i class="service-icon fa-solid fa-tree-city rounded-1"></i>
-                        <p class="hover-theme-color text-black text-decoration-none fs-20 fw-semibold">Lighting Fixtures</p>
+                        <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Lighting Fixtures</p>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design and
                             man
                         </p>
@@ -165,10 +166,10 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="service secondary-color">
+                <div x-data="{ shown: false }" x-intersect.once="shown = true" class=" col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div x-show="shown" class="slideup-7 service secondary-color">
                         <i class="service-icon fa-solid fa-building-columns rounded-1"></i>
-                        <p class="hover-theme-color text-black text-decoration-none fs-20 fw-semibold">Custom Shelving</p>
+                        <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Custom Shelving</p>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design and
                             man
                         </p>
@@ -176,10 +177,10 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="service secondary-color">
+                <div x-data="{ shown: false }" x-intersect.once="shown = true" class=" col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div x-show="shown" class="slideup-8 service secondary-color">
                         <i class="service-icon fa-regular fa-building rounded-1"></i>
-                        <p class="hover-theme-color text-black text-decoration-none fs-20 fw-semibold">Wallpaper Install</p>
+                        <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Wallpaper Install</p>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design and
                             man
                         </p>
@@ -191,20 +192,22 @@
         </div>
 
         <section class="secondary-color mt-5 w-100" style="padding-bottom: 180px;">
-            <div class="appointment-section pt-5">
-                <h2 class="fw-bold">Leave A Comment</h2>
+            <div class="content-wrapper pt-5">
+                <div x-data="{ shown: false }" x-intersect.once="shown = true">
+                    <h2 x-show="shown" class="slideup-1 fw-bold">Leave A Comment</h2>
+                </div>
                 <form class="row g-4 mt-3" action="">
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <input class="form-control border-0 py-3 px-4 fs-14" type="text" placeholder="Name">
+                    <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-6">
+                        <input x-show="shown" class="slideup-1 form-control border-0 py-3 px-4 fs-14" type="text" placeholder="Name">
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <input class="form-control border-0 py-3 px-4 fs-14" type="text" placeholder="Email Address">
+                    <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-6">
+                        <input x-show="shown" class="slideup-2 form-control border-0 py-3 px-4 fs-14" type="text" placeholder="Email Address">
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <input class="form-control border-0 py-3 px-4 fs-14" type="text" placeholder="Phone Number">
+                    <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-6">
+                        <input x-show="shown" class="slideup-3 form-control border-0 py-3 px-4 fs-14" type="text" placeholder="Phone Number">
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <select class="form-control border-0 py-3 px-4 fs-14">
+                    <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-6">
+                        <select x-show="shown" class="slideup-4 form-control border-0 py-3 px-4 fs-14">
                             <option value="" selected> Choose Services </option>
                             <option value="">Urban Oasis</option>
                             <option value="">Real Estate</option>
@@ -212,13 +215,14 @@
                             <option value="">Remodelling</option>
                         </select>
                     </div>
-                    <div class="col-12">
-                        <textarea class="form-control border-0 py-3 px-4 fs-14" rows="10"
+                    <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12">
+                        <textarea x-show="shown" class="slideup-5 form-control border-0 py-3 px-4 fs-14" rows="10"
                             placeholder="Message Here"></textarea>
                     </div>
+                    
 
-                    <div>
-                        <button class="hover-black-bg theme-color btn text-white px-4 py-3 fs-14">Appointment Now -></button>
+                    <div x-data="{ shown: false }" x-intersect.once="shown = true">
+                        <button x-show="shown" class="slideup-6 hover-black-bg theme-color btn text-white px-4 py-3 fs-14">Appointment Now -></button>
 
                     </div>
                 </form>
@@ -228,14 +232,17 @@
 
     <!-- footer -->
     <footer class="services-footer" style="margin-top: 300px;">
-        <div class="footer-absolute theme-color d-flex justify-content-end">
-            <img class="circle-border" src="/images/circle-border.png" alt="circle border">
-            <img class="guy-standing" src="/images/guy-standing.png" alt="guy standing">
-            <div class="d-flex justify-content-evenly align-items-center w-75">
-                <p class="fs-35 fw-bold w-50">Crafting spaces that
-                    the reflect style</p>
-                <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
-                        class="fa-solid fa-arrow-right"></i></a>
+        <div x-data="{ shown: false }" x-intersect.once="shown = true"
+            class="footer-absolute theme-color d-flex justify-content-end">
+            <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
+            <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
+            <div x-show="shown" class="slideup-3 w-75">
+                <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
+                    <p class="fs-35 fw-bold w-50">Crafting spaces that
+                        the reflect style</p>
+                    <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
         <div class="row pt-5">
@@ -323,6 +330,12 @@
             </div>
         </div>
     </div>
+    
+    <!-- Alpine Plugins -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Alpine Core -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/807f2d6ec6.js" crossorigin="anonymous"></script>
