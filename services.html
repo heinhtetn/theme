@@ -99,7 +99,7 @@
             </div>
         </section>
         <div class="content-wrapper">
-            <section class="row gx-4 gy-5">
+            <section class="row gx-4 gy-5 services-section">
                 <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div x-show="shown" class="slideup-1 service secondary-color">
                         <i class="service-icon fa-solid fa-hospital rounded-1"></i>
@@ -191,7 +191,7 @@
             </section>
         </div>
 
-        <section class="secondary-color mt-5 w-100" style="padding-bottom: 180px;">
+        <section class="secondary-color mt-5 w-100" style="padding-bottom: 250px;">
             <div class="content-wrapper pt-5">
                 <div x-data="{ shown: false }" x-intersect.once="shown = true">
                     <h2 x-show="shown" class="slideup-1 fw-bold">Leave A Comment</h2>
@@ -233,18 +233,18 @@
     <!-- footer -->
     <footer class="services-footer" style="margin-top: 300px;">
         <div x-data="{ shown: false }" x-intersect.once="shown = true"
-            class="footer-absolute theme-color d-flex justify-content-end">
-            <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
-            <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
-            <div x-show="shown" class="slideup-3 w-75">
-                <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
-                    <p class="fs-35 fw-bold w-50">Crafting spaces that
-                        the reflect style</p>
-                    <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
-                            class="fa-solid fa-arrow-right"></i></a>
-                </div>
+        class="footer-absolute theme-color d-flex justify-content-end">
+        <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
+        <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
+        <div x-show="shown" class="slideup-3 w-75">
+            <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
+                <p class="fs-35 fw-bold w-50">Crafting spaces that
+                    the reflect style</p>
+                <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
+                        class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
+    </div>
         <div class="row pt-5">
             <div class="col-2 offset-2">
                 <h1>LOGO</h1>
@@ -316,17 +316,13 @@
     </footer>
 
     <!-- copyright -->
-    <div class="container-fluid copyright-container">
-        <div class="row">
-            <div class="col-5 offset-2">
-                <span class="text-white">&copy BigtechInternational 2024 | All Rights Reserved</span>
-            </div>
-            <div class="col-5">
-                <div class="d-flex text-white">
-                    <p class="me-4">Terms and Conditions</p>
-                    <p class="me-4">Privacy Policies</p>
-                    <p>Contact us</p>
-                </div>
+    <div class="copyright container-fluid copyright-container">
+        <div class="d-flex flex-column flex-md-column flex-lg-row justify-content-evenly gap-3">
+            <span class="text-white text-center">&copy BigtechInternational 2024 | All Rights Reserved</span>
+            <div class="d-flex justify-content-center text-white">
+                <p class="me-4">Terms & Condition</p>
+                <p class="me-4">Privacy Policy</p>
+                <p>Contact us</p>
             </div>
         </div>
     </div>
