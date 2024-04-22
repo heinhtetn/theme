@@ -69,6 +69,14 @@ body {
 
 /* general */
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
 .fs-14 {
   font-size: 14px;
 }
@@ -363,6 +371,18 @@ iframe {
 }
 
 /* services */
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 10px;
+  font-size: 14px;
+}
 
 .services-section {
   min-height: 450px;
