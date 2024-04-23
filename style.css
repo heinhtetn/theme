@@ -3,16 +3,23 @@
   --secondary-color: #f8f8f8;
   --font-color: rgb(84, 89, 95);
 }
-
+html{
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 .address{
   background-color: #f8f8f8;
+}
+.heading
+{
+  font-size: 45px;
+  font-weight: 700
 }
 .dummy{
   position: absolute;
@@ -24,7 +31,10 @@ body {
   transform: skewX(-45deg);
   
 }
-
+.image1{
+  height: 250px;
+  width: 400px;
+}
 .social {
   position: relative;
   background-color: #a6a182;
@@ -54,6 +64,14 @@ body {
   border: 1px solid #a6a182;
   border-radius: 5px;
   z-index: -1;
+}
+.texth{
+  font-size: 50px;
+  font-weight: 700;
+}
+.text{
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .hero-image2-border {
@@ -150,7 +168,7 @@ body {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 580px){
   .banner-text {
     font-size: 35px;
   }
@@ -161,6 +179,60 @@ body {
   .address-bar{
     display: none;
   }
+  #about-us{
+    width: 100%;
+    margin: 50px auto;
+    background-color: red;
+  }
+  .cover25{
+    width: 80%;
+    height: auto;
+    margin: 10%;
+    text-align: center;
+  }
+  .texth{
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .text{
+    font-size: 18px;
+  }
+  .image1{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 200px;
+  }
+  .small-heading{
+    font-size: 20px;
+  }
+  
+  /* .texth{
+    font-size: 20px;
+  }
+  .text{
+    font-size: 12px;
+  }
+  #image-col{
+    width: 100%;
+
+  }
+  .image1{
+    width: 230px;
+    height: 200px;
+  }
+  .cover25{
+    width: 230px;
+    height: 100px;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cover{
+    margin: 3px;
+  } */
+
 
   .copyright {
     font-size: 14px;
@@ -421,11 +493,7 @@ iframe {
   color: white;
 }
 
-.heading
-{
-  font-size: 45px; 
-  font-weight: 700
-}
+
 
 .shape{
   position: relative;
