@@ -1,4 +1,4 @@
-.theme-btn {
+/* .theme-btn {
   background-color: var(--theme-color);
   color: white;
   display: inline-block;
@@ -53,9 +53,9 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
-}
+} */
 
-.address{
+/* .address{
   background-color: #f8f8f8;
 }
 .heading
@@ -91,7 +91,7 @@ body {
   background-color: #a6a182;
   color: white;
   transition: background-color 0.3s, color 0.3s;
-}
+} */
 .nav-item button:hover {
   background-color: black;
   color: white;
@@ -129,7 +129,7 @@ body {
 
 /* general */
 
-.cursor-pointer {
+/* .cursor-pointer {
   cursor: pointer;
 }
 
@@ -409,11 +409,11 @@ footer:not(.home-footer) {
         transform: translateY(0%);
         opacity: 1;
     }
-}
+} */
 
 /* contact */
 
-.contact-icon {
+/* .contact-icon {
   background-color: #f0efec;
   color: #a6a182;
   height: 30px;
@@ -424,10 +424,6 @@ footer:not(.home-footer) {
   border-radius: 50%;
   padding: 20px;
   font-size: 14px;
-}
-
-.contact-info {
-  /* background-color: #f8f8f8; */
 }
 
 iframe {
@@ -454,11 +450,11 @@ iframe {
   .get-in-touch-absolute {
     width: 100%;
   }
-}
+} */
 
 /* services */
 
-.input-with-icon {
+/* .input-with-icon {
   position: relative;
 }
 
@@ -492,10 +488,10 @@ iframe {
   width: 90%;
   max-width: 1200px;
   margin: 50px auto;
-}
+} */
 
 /* service detail */
-
+/* 
 .fa-circle-chevron-right {
   font-size: 18px;
   color: var(--theme-color);
@@ -507,7 +503,7 @@ iframe {
 
 .need-help-content {
   background-color: rgba(0, 0, 0, 0.7);
-}
+} */
 
 
 
@@ -798,7 +794,7 @@ iframe {
   color: #a6a182;
 }
 
-footer{
+/* footer{
   background-color: black;
   margin-top: 120px;
   color: white;
@@ -836,9 +832,6 @@ footer{
   margin: 0 auto;
   
 }
-/* .footer-col{
-  max-width: 30%;
-} */
 
 .social-links{
   color: #fff;
@@ -860,8 +853,8 @@ footer{
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: rgba(255, 255, 255, 0.1) ;
-  width: 40px; /* Adjust based on the actual width of your icon */
-    height: 40px; /* Adjust based on the actual height of your icon */
+  width: 40px; 
+    height: 40px; 
     border: 1px solid rgba(255, 255, 255,0.1);
 }
 .pinterest-icon{
@@ -871,8 +864,8 @@ footer{
   padding-left: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 40px; /* Adjust based on the actual width of your icon */
-    height: 40px; /* Adjust based on the actual height of your icon */ 
+  width: 40px; 
+    height: 40px;  
 }
 .add-icon{
   border: 1px solid rgb(255, 255, 255);
@@ -897,7 +890,6 @@ footer{
 
 
 .input-group{
-  /* border: 1px solid #a6a182; */
   border-radius: 5px;
 }
 .input{
@@ -913,10 +905,6 @@ input ::placeholder{
   border: 1px solid #a6a182;
   padding: 15px;
   border-radius: 5px;
-}
+} */
 
-@media screen and (max-width: 600px) {
-  .rose-shape {
-    display: none;
-  }
-}
+

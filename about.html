@@ -512,6 +512,19 @@
 
     <!--Footer-->
     <footer class="footer">
+      <div x-data="{ shown: false }" x-intersect.once="shown = true"
+            class="footer-absolute theme-color d-flex justify-content-end">
+            <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
+            <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
+            <div x-show="shown" class="slideup-3 w-75">
+                <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
+                    <p class="fs-35 fw-bold w-50">Crafting spaces that
+                        the reflect style</p>
+                    <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
       <div class="row pt-5 footer-row">
           
           <div class="col-12 col-lg-3 logo-column" x-data="{ shown: false }" x-intersect.once="shown = true">
@@ -574,6 +587,7 @@
               </ul>
           </div>
       </div>
+      <img class="rose-shape" src="/images/footer-shape.png" alt="shape of a rose">
   </footer>
 
 
