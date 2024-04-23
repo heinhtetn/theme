@@ -81,15 +81,15 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item mt-2 me-5">
+              <li class="nav-item me-5">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
-              <li class="nav-item mt-2 me-5">
+              <li class="nav-item me-5">
                 <a class="nav-link" href="about.html">About</a>
               </li>
-              <li class="nav-item mt-2 me-5 dropdown">
+              <li class="nav-item me-5 dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -113,23 +113,23 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item mt-2 me-5">
+              <li class="nav-item me-5">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
-              <li class="nav-item mt-2 me-5 nav-hide">
+              <li class="nav-item me-5 nav-hide">
                 <i
                   class="fa-solid fa-cart-shopping"
-                  style="margin-top: 11px; padding-left: 350px"
+                  style="margin-top: 11px; padding-left: 200px"
                 ></i>
               </li>
-              <li class="nav-item mt-2 me-5 nav-hide">
+              <li class="nav-item me-5 nav-hide">
                 <i
                   class="fa-solid fa-magnifying-glass"
                   style="margin-top: 11px"
                 ></i>
               </li>
               <li class="nav-item">
-                <button class="btn pt-3 pb-3 ps-4 pe-4" id="button">
+                <button class="btn p-2" id="button">
                   Get A Quote<i class="fa-solid fa-arrow-right-long ms-2"></i>
                 </button>
               </li>
@@ -209,7 +209,7 @@
               <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.full="shown = true">
                   <div x-show="shown" class="row process">
                       <div class="col-10 slideup-2">
-                          <h3>Blueprint Builders</h3>
+                          <h4>Blueprint Builders</h4>
                       </div>
                       <div class="col-2 slideup-2">
                           <h3 style="font-size: 40px;color: #a6a182;">01</h3>
@@ -222,7 +222,7 @@
               <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.full="shown = true">
                   <div x-show="shown" class="row process">
                       <div class="col-10 slideup-3">
-                          <h3>Artistic Architecture</h3>
+                          <h4>Artistic Architecture</h4>
                       </div>
                       <div class="col-2 slideup-3">
                           <h3 style="font-size: 40px;color: #a6a182;">02</h3>
@@ -235,7 +235,7 @@
               <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
                   <div x-show="shown" class="row process slideup-4">
                       <div class="col-10">
-                          <h3>Interior Scape Design</h3>
+                          <h4>Interior Scape Design</h4>
                       </div>
                       <div class="col-2">
                           <h3 style="font-size: 40px;color: #a6a182;">03</h3>
@@ -251,7 +251,7 @@
           <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
               <div x-show="shown" class="row process slideup-5">
                   <div class="col-10">
-                      <h3>Conceptual Spaces</h3>
+                      <h4>Conceptual Spaces</h4>
                   </div>
                   <div class="col-2">
                       <h3 style="font-size: 40px;color: #a6a182;">04</h3>
@@ -264,7 +264,7 @@
           <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
               <div x-show="shown" class="row process slideup-6">
                   <div class="col-10">
-                      <h3>Inspire Design Group</h3>
+                      <h4>Inspire Design Group</h4>
                   </div>
                   <div class="col-2">
                       <h3 style="font-size: 40px;color: #a6a182;">05</h3>
@@ -277,7 +277,7 @@
           <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
               <div x-show="shown" class="row process slideup-7">
                   <div class="col-10">
-                      <h3>Modern Living Spaces</h3>
+                      <h4>Modern Living Spaces</h4>
                   </div>
                   <div class="col-2">
                       <h3 style="font-size: 40px;color: #a6a182;">06</h3>
@@ -512,6 +512,19 @@
 
     <!--Footer-->
     <footer class="footer">
+      <div x-data="{ shown: false }" x-intersect.once="shown = true"
+            class="footer-absolute theme-color d-flex justify-content-end">
+            <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
+            <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
+            <div x-show="shown" class="slideup-3 w-75">
+                <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
+                    <p class="fs-35 fw-bold w-50">Crafting spaces that
+                        the reflect style</p>
+                    <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
       <div class="row pt-5 footer-row">
           
           <div class="col-12 col-lg-3 logo-column" x-data="{ shown: false }" x-intersect.once="shown = true">
@@ -549,7 +562,7 @@
           <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
               <h4 x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
               <ul x-show="shown" class="footer-list slideup-7">
-                  <div class="input-group">
+                  <div class="input-group d-flex">
                       <input type="text" placeholder="Your Email Address" class="input">
                       <button class="email-button"><i class="fa-solid fa-paper-plane"></i></button>
                   </div>
@@ -574,6 +587,7 @@
               </ul>
           </div>
       </div>
+      <img class="rose-shape" src="/images/footer-shape.png" alt="shape of a rose">
   </footer>
 
 
