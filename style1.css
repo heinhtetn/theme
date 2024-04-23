@@ -119,6 +119,14 @@
     top: 400px;
     left: 100px;
 }
+.client-box{
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 260px;
+    position: absolute;
+    left: 62%;
+    top: 50%;
+}
 /*-----AboutUs-----*/
 .cover{
     margin-top: 10px;
@@ -351,8 +359,9 @@
 }
 .light{
     position: absolute;
-    top:-220px;
-    left: 600px;
+    top:-35%;
+    right: 0px;
+    width: 50%;
     z-index: 2;
 }
 
@@ -618,10 +627,11 @@ footer{
       }
     
       /* Ensure images are behind navigation drawer */
-      .img1,
-      .img2 {
+      .img1
+       {
         z-index: 1;
       }
+
     .address{
         padding-left: 0;
     }
@@ -635,6 +645,15 @@ footer{
     }
     #hide{
         display: none;
+    }
+    .client-box{
+        left: 22%;
+        top: 10%px;
+        z-index: 2;
+    }
+    .cli-img{
+        width: 50%;
+        height: auto;
     }
     /*-----DiscoveredSection-----*/
     .discover{
@@ -675,7 +694,7 @@ footer{
     .border-col2{
         left: 0;
         right: 0;
-        top: 150px;
+        top: 109%;
     }
     .border2{
         left: 0;
@@ -688,12 +707,12 @@ footer{
     }
     .border3{
         left: 350px;
-        top: 195px;
+        top: 39%;
     }
     .img1{
         left: 210px;
         right: 0;
-        top: 222px;
+        top: 43%;
         z-index: 1;
         width: 40%;
     }
@@ -701,7 +720,7 @@ footer{
         left: 5%;
         right: 0px;
         width: 90%;
-        top: 215px;
+        top: 42%;
     }
     #row{
         margin: 0;

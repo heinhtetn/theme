@@ -28,6 +28,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
   </head>
   <body>
     <!--Header-->
@@ -131,7 +132,7 @@
               <li class="nav-item">
                 <button class="btn pt-3 pb-3 ps-4 pe-4" id="button">
                   Get A Quote<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                </button>
+              </button>
               </li>
             </ul>
           </div>
@@ -165,6 +166,10 @@
         <img x-show="shown" src="images/01.jpg" alt="" class="rounded img-fluid img2 slideup-3"/>
         <img x-show="shown" src="images/star.png" class="star slideup-2" alt=""/>
         <div x-show="shown" class="border3 slideup-2"><span class="d-none">border</span></div>
+        <span class="client-box d-flex flex-row rounded"> 
+          <img src="images/client.png" class="img-fluid cli-img" alt="">
+          <p>2000+<br>Happy Clients</p>
+        </span>
       </div>
     </div>
 
@@ -648,8 +653,10 @@
     </div>    
 
     <!--OurExpertTeam-->
-    <div class="container" id="expert" style="position: relative;">
-        <img src="images/light.png" class="light" alt="">
+    <div style="position: relative;">
+      <img src="images/light.png" class="light" alt="">
+      <div class="container" id="expert">
+        
         <div class="expert-team text-center mt-5">
             <div x-data="{ shown: false }" x-intersect.once="shown = true">
               <h2 x-show="shown" class="port-smallhead slideup-3">Our Expert Team</h2>
@@ -681,6 +688,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!--FAQs-->
     <div class="container-fluid" style="background-color: #f8f8f8;">
@@ -1117,6 +1125,30 @@
                 });
             });
         });
+let ball = document.querySelector('.client-box');
+let box = document.querySelector('.discover');
+let topPosition = box.clientHeight; // Set initial position to the box height
+let direction = 'down';
+const boxHeight = box.clientHeight;
+const ballHeight = 100;
+
+setInterval(() => {
+    if (direction === 'down') {
+        topPosition += 1;
+        ball.style.top = `${topPosition}px`;
+        if (topPosition >= (boxHeight - ballHeight)) {
+            direction = 'up';
+        }
+    } else {
+        topPosition -= 1;
+        ball.style.top = `${topPosition}px`;
+        if (topPosition <= (boxHeight/1.3)) {
+            direction = 'down';
+        }
+    }
+}, 30);
+
+
     </script>
   </body>
 </html>
