@@ -26,12 +26,22 @@
     <!--AddressBar-->
     <div class="container-fluid">
       <div class="row" style="background-color: #f8f8f8" id="hide">
-        <div class="col-12 col-sm-12 col-lg-7 pt-2 pb-2 info" style="background-color: #f8f8f8">
-          <span class="infotext"><i class="fa-solid fa-location-dot me-2" style="color: #a6a182"></i>
+        <div
+          class="col-12 col-sm-12 col-lg-7 pt-2 pb-2 info"
+          style="background-color: #f8f8f8"
+        >
+          <span class="infotext"
+            ><i
+              class="fa-solid fa-location-dot me-2"
+              style="color: #a6a182"
+            ></i>
             6391 Elgin St. Celina, 10299
           </span>
         </div>
-        <div class="col-12 col-sm-12 col-lg-5 social p-2" style="background-color: #a6a182">
+        <div
+          class="col-12 col-sm-12 col-lg-5 social p-2"
+          style="background-color: #a6a182"
+        >
           <span class="dummy"></span>
           <div class="d-flex" id="flex">
             <span class="ps-4">info@example.com</span>
@@ -49,21 +59,35 @@
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container">
         <a class="navbar-brand" href="">LOGO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item mt-2 me-5">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <li class="nav-item me-5">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
-            <li class="nav-item mt-2 me-5">
+            <li class="nav-item me-5">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item mt-2 me-5 dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <li class="nav-item me-5 dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Services
               </a>
               <ul class="dropdown-menu">
@@ -71,24 +95,32 @@
                   <a class="dropdown-item" href="services.html">Services</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="service-detail.html">Service Details</a>
+                  <a class="dropdown-item" href="service-detail.html"
+                    >Service Details</a
+                  >
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
               </ul>
             </li>
-            <li class="nav-item mt-2 me-5">
+            <li class="nav-item me-5">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item mt-2 me-5 nav-hide">
-              <i class="fa-solid fa-cart-shopping" style="margin-top: 11px; padding-left: 350px"></i>
+            <li class="nav-item me-5 nav-hide">
+              <i
+                class="fa-solid fa-cart-shopping"
+                style="margin-top: 11px; padding-left: 200px"
+              ></i>
             </li>
-            <li class="nav-item mt-2 me-5 nav-hide">
-              <i class="fa-solid fa-magnifying-glass" style="margin-top: 11px"></i>
+            <li class="nav-item me-5 nav-hide">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="margin-top: 11px"
+              ></i>
             </li>
             <li class="nav-item">
-              <button class="btn pt-3 pb-3 ps-4 pe-4" id="button">
+              <button class="btn p-2" id="button">
                 Get A Quote<i class="fa-solid fa-arrow-right-long ms-2"></i>
               </button>
             </li>
@@ -570,14 +602,14 @@
   <div style="position: relative;">
     <img src="images/light.png" class="light" alt="">
 
-    <div class="container" id="expert" >
+    <div class="container" id="expert">
       <div class="expert-team text-center mt-5">
         <div x-data="{ shown: false }" x-intersect.once="shown = true">
           <h2 x-show="shown" class="port-smallhead slideup-3">Our Expert Team</h2>
           <h3 x-show="shown" class="port-head mb-5 slideup-3">Unleash The Potential<br>
             Of Your Space</h3>
         </div>
-  
+
         <div class="owl-carousel owl-theme mb-5" id="expert-teams">
           <div class="item">
             <img src="images/m1.jpg" alt="" class="portfolio-image">
@@ -604,7 +636,7 @@
       </div>
     </div>
   </div>
-  
+
   <!--FAQs-->
   <div class="container-fluid" style="background-color: #f8f8f8;">
     <div class="container">
@@ -874,7 +906,7 @@
       <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
         <h4 x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
         <ul x-show="shown" class="footer-list slideup-7">
-          <div class="input-group">
+          <div class="input-group d-flex">
             <input type="text" placeholder="Your Email Address" class="input">
             <button class="email-button"><i class="fa-solid fa-paper-plane"></i></button>
           </div>

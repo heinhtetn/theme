@@ -25,73 +25,112 @@
 
 <body>
     <header>
-        <section class="address-bar">
-            <div class="row" style="background-color: #f8f8f8;">
-                <div class="col-5 offset-2 address p-2">
-                    <i class="fa-solid fa-location-dot me-2" style="color: #a6a182"></i>
-                    6391 Elgin St. Celina, 10299
-                </div>
-                <div class="col-5 social p-2">
-                    <div class="dummy"></div>
-                    <div class="d-flex">
-                        <span class="ps-5">info@example.com</span>
-                        <div class="ms-5">
-                            <i class="fa-brands fa-facebook-f me-3"></i>
-                            <i class="fa-brands fa-twitter me-3"></i>
-                            <i class="fa-brands fa-vimeo-v me-3"></i>
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </div>
-                    </div>
-                </div>
+        <!--AddressBar-->
+        <div class="container-fluid">
+          <div class="row" style="background-color: #f8f8f8" id="hide">
+            <div
+              class="col-12 col-sm-12 col-lg-7 pt-2 pb-2 info"
+              style="background-color: #f8f8f8"
+            >
+              <span class="infotext"
+                ><i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #a6a182"
+                ></i>
+                6391 Elgin St. Celina, 10299
+              </span>
             </div>
-        </section>
+            <div
+              class="col-12 col-sm-12 col-lg-5 social p-2"
+              style="background-color: #a6a182"
+            >
+              <span class="dummy"></span>
+              <div class="d-flex" id="flex">
+                <span class="ps-4">info@example.com</span>
+                <span class="ms-4">
+                  <i class="fa-brands fa-facebook-f me-4"></i>
+                  <i class="fa-brands fa-twitter me-4"></i>
+                  <i class="fa-brands fa-vimeo-v me-4"></i>
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--NavigationBar-->
         <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container">
-                <a class="navbar-brand" href="">LOGO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item mt-2 me-5 ms-2">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item mt-2 me-5">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item mt-2 me-5 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                <li><a class="dropdown-item" href="service-detail.html">Service Details</a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item mt-2 me-5">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item mt-2 me-5">
-                            <i class="fa-solid fa-cart-shopping" style="margin-top: 11px; padding-left: 350px"></i>
-                        </li>
-                        <li class="nav-item mt-2 me-5">
-                            <i class="fa-solid fa-magnifying-glass" style="margin-top: 11px"></i>
-                        </li>
-                        <li class="nav-item">
-                            <button class="btn p-3">Get A Quote<i
-                                    class="fa-solid fa-arrow-right-long ms-2"></i></button>
-                        </li>
-                    </ul>
-                </div>
+          <div class="container">
+            <a class="navbar-brand" href="">LOGO</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-5">
+                  <a class="nav-link active" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item me-5 dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="services.html">Services</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="service-detail.html"
+                        >Service Details</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item me-5 nav-hide">
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    style="margin-top: 11px; padding-left: 200px"
+                  ></i>
+                </li>
+                <li class="nav-item me-5 nav-hide">
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="margin-top: 11px"
+                  ></i>
+                </li>
+                <li class="nav-item">
+                  <button class="btn p-2" id="button">
+                    Get A Quote<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                  </button>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <main>
         <section class="banner">
             <img class="w-100 h-100" src="/images/contact-banner.jpg" alt="contact-banner">
@@ -225,36 +264,36 @@
         </div>
     </main>
 
-    <!-- footer -->
+    <!--Footer-->
     <footer class="footer">
         <div x-data="{ shown: false }" x-intersect.once="shown = true"
-            class="footer-absolute theme-color d-flex justify-content-end">
-            <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
-            <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
-            <div x-show="shown" class="slideup-3 w-75">
-                <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
-                    <p class="fs-35 fw-bold w-50">Crafting spaces that
-                        the reflect style</p>
-                    <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
-                            class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
+              class="footer-absolute theme-color d-flex justify-content-end">
+              <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
+              <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
+              <div x-show="shown" class="slideup-3 w-75">
+                  <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
+                      <p class="fs-35 fw-bold w-50">Crafting spaces that
+                          the reflect style</p>
+                      <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
+                              class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+              </div>
+          </div>
         <div class="row pt-5 footer-row">
             
-            <div class="col-12 col-lg-3">
-                <h1>LOGO</h1>
-                <p>It is a long established fact that a reader will be distracted</p>
-                <div class="d-flex social-icons">
+            <div class="col-12 col-lg-3 logo-column" x-data="{ shown: false }" x-intersect.once="shown = true">
+                <h1 x-show="shown" class="slideup-1">LOGO</h1>
+                <p x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
+                <div x-show="shown" class="d-flex social-icons slideup-1">
                     <a href="#" class="social-links"><i class="fa-brands fa-facebook-f facebook-icon me-3"></i></a></i>
                     <a href="#" class="social-links"><i class="fa-brands fa-twitter ficon me-3"></i></a>
                     <a href="#" class="social-links"><i class="fa-brands fa-vimeo-v ficon me-3"></i></a>
                     <a href="#" class="social-links"></a><i class="fa-brands fa-pinterest-p pinterest-icon"></i></a>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
-                <h4 class="footer-title ms-3">What We Offers</h4>
-                <ul class="footer-list">
+            <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+                <h4 x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
+                <ul x-show="shown" class="footer-list slideup-3">
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Architecture Plus</li>
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Urban Oasis</li>
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;The Design Studio</li>
@@ -263,9 +302,9 @@
                 </ul>
             </div>
             
-            <div class="col-12 col-lg-3">
-                <h4 class="footer-title ms-3">More Service</h4>
-                <ul class="footer-list">
+            <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+                <h4 x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
+                <ul x-show="shown" class="footer-list slideup-5">
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;
                         Spacecraft Studio</li>
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Interiorscape Design</li>
@@ -274,10 +313,10 @@
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Interior Perfection</li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-3">
-                <h4 class="footer-title ms-3">Contact</h4>
-                <ul class="footer-list">
-                    <div class="input-group">
+            <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+                <h4 x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
+                <ul x-show="shown" class="footer-list slideup-7">
+                    <div class="input-group d-flex">
                         <input type="text" placeholder="Your Email Address" class="input">
                         <button class="email-button"><i class="fa-solid fa-paper-plane"></i></button>
                     </div>
@@ -304,18 +343,23 @@
         </div>
         <img class="rose-shape" src="/images/footer-shape.png" alt="shape of a rose">
     </footer>
-
-    <!-- copyright -->
-    <div class="copyright container-fluid copyright-container">
-        <div class="d-flex flex-column flex-md-column flex-lg-row justify-content-evenly gap-3">
-            <span class="text-white text-center">&copy BigtechInternational 2024 | All Rights Reserved</span>
-            <div class="d-flex justify-content-center text-white">
-                <p class="me-4">Terms & Condition</p>
-                <p class="me-4">Privacy Policy</p>
-                <p>Contact us</p>
-            </div>
-        </div>
-    </div>
+  
+  
+      <!-- copyright -->
+      <div class="copyright container-fluid copyright-container">
+          <div class="container">
+              <div class="d-flex flex-column flex-md-column flex-lg-row justify-content-between gap-3">
+                  <span class="text-white text-center" id="c-right">&copy BigtechInternational 2024 | All Rights Reserved</span>
+                  <div class="d-flex flex-column flex-md-column flex-lg-row justify-content-center text-white">
+                      <div class="d-flex flex-row flex-md-row flex-lg-row justify-content-center text-white">
+                          <p class="me-4 text-center">Terms & Condition</p>
+                          <p class="me-4 text-center">Privacy Policy</p>
+                      </div>
+                      <p class="me-4 text-center">Contact Us</p>
+                  </div>
+              </div>
+          </div>
+      </div>
     
     <!-- Alpine Plugins -->
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>

@@ -524,7 +524,7 @@ iframe {
 }
 
 #flex {
-    margin-left: -300px;
+    margin-left: -200px;
 }
 
 .address {
@@ -1008,34 +1008,6 @@ footer {
     position: relative;
     display: flex;
     justify-content: center;
-
-}
-
-.footer-title {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.footer-list {
-    list-style: none;
-    padding-left: 15px;
-}
-
-.contact-info {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.copyright-container {
-    padding-top: 25px;
-    padding-bottom: 10px;
-    background-color: rgb(34, 33, 33);
-}
-
-.footer-row {
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
 }
 
 .social-links {
@@ -1080,9 +1052,8 @@ footer {
     /* Adjust based on the actual height of your icon */
 }
 
-.add-icon {
+/* .add-icon {
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 50%;
     padding-left: 13px;
     padding-top: 10px;
     padding-right: 13px;
@@ -1096,7 +1067,7 @@ footer {
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-}
+} */
 
 .list:hover .fa-minus {
     display: inline !important;
@@ -1110,10 +1081,12 @@ footer {
     background-color: #000;
     padding: 15px;
     border-radius: 5px;
+    width: 70%;
 }
 
 input::placeholder {
     color: #a6a182;
+    font-size: 12px;
 }
 
 .email-button {
@@ -1130,7 +1103,7 @@ input::placeholder {
 .process:after {
     display: block;
     height: 1px;
-    width: 400px;
+    width: 90%;
     background: #000;
     content: "";
     text-align: center;
@@ -1205,6 +1178,7 @@ input::placeholder {
     }
 
     #flex {
+
         display: flex;
         flex-direction: column;
     }
@@ -1542,94 +1516,9 @@ footer {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-
-}
-
-.social-links {
-    color: #fff;
-}
-
-.ficon {
-
-    padding: 11px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
-.fa-brands:hover {
-    background-color: #a6a182;
-    transition: 0.3s;
-}
-
-.facebook-icon {
-    border-radius: 50%;
-    padding-left: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 40px;
-    /* Adjust based on the actual width of your icon */
-    height: 40px;
-    /* Adjust based on the actual height of your icon */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.pinterest-icon {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    padding-left: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 40px;
-    /* Adjust based on the actual width of your icon */
-    height: 40px;
-    /* Adjust based on the actual height of your icon */
-}
-
-.add-icon {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    padding-left: 13px;
-    padding-top: 10px;
-    padding-right: 13px;
-    padding-bottom: 10px;
-}
-
-.ph-icon {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-
-.list:hover .fa-minus {
-    display: inline !important;
 }
 
 
 
-.input-group {
-    /* border: 1px solid #a6a182; */
-    border-radius: 5px;
-}
 
-.input {
-    background-color: #000;
-    padding: 15px;
-    border-radius: 5px;
-}
 
-input ::placeholder {
-    color: #a6a182;
-}
-
-.email-button {
-    background-color: #a6a182;
-    border: 1px solid #a6a182;
-    padding: 15px;
-    border-radius: 5px;
-}
