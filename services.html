@@ -254,8 +254,10 @@
                     </div>
                     <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-6">
                         <div class="input-with-icon">
-                            <select x-show="shown" class="slideup-4 cursor-pointer form-control border-0 py-3 px-4 fs-14">
-                                <option value="" selected> Choose Services </option>
+                            <select x-show="shown"
+                                class="slideup-4 cursor-pointer form-control border-0 py-3 px-4 fs-14">
+                                <option value="" selected style="background-color: red !important;"> Choose Services
+                                </option>
                                 <option value="">Urban Oasis</option>
                                 <option value="">Real Estate</option>
                                 <option value="">Room Layout</option>
@@ -263,22 +265,30 @@
                             </select>
                             <i x-show="shown" class="slideup-4 fa-solid fa-chevron-down"></i>
                         </div>
-                        
+
                     </div>
                     <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12">
                         <div class="input-with-icon">
                             <textarea x-show="shown" class="slideup-5 form-control border-0 py-3 px-4 fs-14" rows="10"
-                            placeholder="Message Here"></textarea>
+                                placeholder="Message Here"></textarea>
                             <i x-show="shown" class="slideup-5 fa-solid fa-paper-plane"></i>
                         </div>
-                        
+
                     </div>
 
 
                     <div x-data="{ shown: false }" x-intersect.once="shown = true">
                         <button x-show="shown"
-                            class="slideup-6 hover-black-bg theme-color btn text-white px-4 py-3 fs-14">Appointment Now
+                            class="slideup-6 hover-black-bg theme-color btn text-white fw-semibold px-4 py-3 fs-14">Appointment
+                            Now
                             &rarr;</button>
+
+                        <div style="position: relative; width: 200px;">
+                            <button x-show="shown"
+                                class="w-100 slideup-2 btn theme-color theme-btn text-white px-4 py-3 fw-semibold fs-14">
+                                Appointment now &rarr;
+                            </button>
+                        </div>
 
                     </div>
                 </form>
