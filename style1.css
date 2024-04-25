@@ -39,6 +39,10 @@ body {
     width: 100%;
 }
 
+.theme-btn-hover-text-white:hover {
+    color: white !important;
+}
+
 .theme-btn::after {
     content: "";
     background-color: black;
