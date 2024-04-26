@@ -102,9 +102,9 @@
   <main>
     <section class="banner">
       <img class="w-100 h-100" src="images/contact-banner.jpg" alt="banner image">
-      <div class="text-white">
-        <h1 class="slideup-1 fw-bold banner-text text-center">Service Detail</h1>
-        <p class="slideup-1 banner-breads">Home <i class="fa-solid fa-chevron-right fa-xs mx-1"></i>
+      <div class="text-white" x-data="{ shown: false }" x-intersect.once="shown = true">
+        <h1 x-cloak x-show="shown" class="slideup-1 fw-bold banner-text text-center">Service Detail</h1>
+        <p x-cloak x-show="shown" class="slideup-1 banner-breads">Home <i class="fa-solid fa-chevron-right fa-xs mx-1"></i>
           Service Detail</p>
       </div>
     </section>
@@ -251,9 +251,9 @@
   <footer class="footer">
     <div x-data="{ shown: false }" x-intersect.once="shown = true"
       class="footer-absolute theme-color d-flex justify-content-end">
-      <img x-show="shown" class="slideup-1 circle-border" src="images/circle-border.png" alt="circle border">
-      <img x-show="shown" class="slideup-2 guy-standing" src="images/guy-standing.png" alt="guy standing">
-      <div x-show="shown" class="slideup-3 w-75">
+      <img x-cloak x-show="shown" class="slideup-1 circle-border" src="images/circle-border.png" alt="circle border">
+      <img x-cloak x-show="shown" class="slideup-2 guy-standing" src="images/guy-standing.png" alt="guy standing">
+      <div x-cloak x-show="shown" class="slideup-3 w-75">
         <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
           <p class="fs-35 fw-bold w-50">Crafting spaces that
             the reflect style</p>
@@ -269,9 +269,9 @@
     <div class="row pt-5 footer-row">
 
       <div class="col-12 col-lg-3 logo-column" x-data="{ shown: false }" x-intersect.once="shown = true">
-        <h1 x-show="shown" class="slideup-1">LOGO</h1>
-        <p x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
-        <div x-show="shown" class="d-flex social-icons slideup-1">
+        <h1 x-cloak x-show="shown" class="slideup-1">LOGO</h1>
+        <p x-cloak x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
+        <div x-cloak x-show="shown" class="d-flex social-icons slideup-1">
           <a href="#" class="social-links"><i class="fa-brands fa-facebook-f facebook-icon me-3"></i></a></i>
           <a href="#" class="social-links"><i class="fa-brands fa-twitter ficon me-3"></i></a>
           <a href="#" class="social-links"><i class="fa-brands fa-vimeo-v ficon me-3"></i></a>
@@ -279,8 +279,8 @@
         </div>
       </div>
       <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-        <h4 x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
-        <ul x-show="shown" class="footer-list slideup-3">
+        <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
+        <ul x-cloak x-show="shown" class="footer-list slideup-3">
           <li class="mt-4 list"><i class="fa-solid fa-minus"
               style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right"
               style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Architecture Plus</li>
@@ -300,8 +300,8 @@
       </div>
 
       <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-        <h4 x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
-        <ul x-show="shown" class="footer-list slideup-5">
+        <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
+        <ul x-cloak x-show="shown" class="footer-list slideup-5">
           <li class="mt-4 list"><i class="fa-solid fa-minus"
               style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right"
               style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;
@@ -321,8 +321,8 @@
         </ul>
       </div>
       <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-        <h4 x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
-        <ul x-show="shown" class="footer-list slideup-7">
+        <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
+        <ul x-cloak x-show="shown" class="footer-list slideup-7">
           <div class="input-group d-flex">
             <input type="text" placeholder="Your Email Address" class="input">
             <button class="email-button"><i class="fa-solid fa-paper-plane"></i></button>

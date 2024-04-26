@@ -143,7 +143,7 @@
     <!--DiscoveredSection-->
     <div class="discover" style="z-index: 0;margin-bottom: 50px;" x-data="{ shown: false }" x-intersect.once="shown = true">
       <div class="section1">
-        <div x-show="shown" class="mt-5 text slideup-1">
+        <div x-cloak x-show="shown" class="mt-5 text slideup-1">
           <h2 class="text-head">
             Discovered Inspired <br />
             Interior Design
@@ -155,17 +155,17 @@
           </p>
         </div>
         <div class="row" id="row" style="margin: 0">
-          <div x-show="shown" class="col border-col1 slideup-2">
+          <div x-cloak x-show="shown" class="col border-col1 slideup-2">
             <div class="border1 offset-4"></div>
           </div>
-          <div x-show="shown" class="col border-col2 slideup-3">
+          <div x-cloak x-show="shown" class="col border-col2 slideup-3">
             <div class="border2"></div>
           </div>
         </div>
-        <img x-show="shown" src="images/02.jpg" alt="" class="rounded img-fluid img1 slideup-2"/>
-        <img x-show="shown" src="images/01.jpg" alt="" class="rounded img-fluid img2 slideup-3"/>
-        <img x-show="shown" src="images/star.png" class="star slideup-2" alt=""/>
-        <div x-show="shown" class="border3 slideup-2"><span class="d-none">border</span></div>
+        <img x-cloak x-show="shown" src="images/02.jpg" alt="" class="rounded img-fluid img1 slideup-2"/>
+        <img x-cloak x-show="shown" src="images/01.jpg" alt="" class="rounded img-fluid img2 slideup-3"/>
+        <img x-cloak x-show="shown" src="images/star.png" class="star slideup-2" alt=""/>
+        <div x-cloak x-show="shown" class="border3 slideup-2"><span class="d-none">border</span></div>
         <span class="client-box d-flex flex-row rounded"> 
           <img src="images/client.png" class="img-fluid cli-img" alt="">
           <p>2000+<br>Happy Clients</p>
@@ -179,24 +179,24 @@
       <div class="col-12 col-sm-12 col-lg-6">
         <div class="row">
           <div class="col-lg-5" x-data="{ shown: false }" x-intersect.once="shown = true">
-            <div x-show="shown" class="cover p-5 rounded slideup-1">
+            <div x-cloak x-show="shown" class="cover p-5 rounded slideup-1">
               <h3 style="color: #fff" class="achi-counter" data-val="25">0+</h3>
               <h4 style="color: #fff">Years of Experience</h4>
             </div>
           </div>
           <div class="col-lg-7 img3" x-data="{ shown: false }" x-intersect.once="shown = true">
-            <img x-show="shown" src="images/04.jpg" alt="" class="rounded img-fluid image-3 slideup-2" />
+            <img x-cloak x-show="shown" src="images/04.jpg" alt="" class="rounded img-fluid image-3 slideup-2" />
           </div>
         </div>
         <div class="row">
           <div class="col-lg-10 img4" x-data="{ shown: false }" x-intersect.once="shown = true">
-            <img x-show="shown" src="images/03.jpg" alt="" class="rounded img-fluid image-3 slideup-3" />
+            <img x-cloak x-show="shown" src="images/03.jpg" alt="" class="rounded img-fluid image-3 slideup-3" />
           </div>
           <div class="col-lg-2 hide"></div>
         </div>
       </div>
       <div class="col-12 col-sm-12 col-lg-6" x-data="{ shown: false }" x-intersect.once="shown = true">
-        <div x-show="shown" class="about-para">
+        <div x-cloak x-show="shown" class="about-para">
           <h4 class="small-head slideup-4">About Us</h4>
           <h3 class="head slideup-4">Design Your Space To Elevate Your Life</h3>
           <div class="para">
@@ -228,15 +228,15 @@
     <div class="col-12 col-sm-12 col-lg-1" style="position: relative"></div>
     <div class="col-12 col-sm-12 col-lg-7" id="latest-service">
       <div x-data="{ shown: false }" x-intersect.once="shown = true">
-        <h3 x-show="shown" class="small-head slideup-1" style="position: relative">Latest Service</h3>
-        <h2 x-show="shown" class="head slideup-1" style="position: relative">
+        <h3 x-cloak x-show="shown" class="small-head slideup-1" style="position: relative">Latest Service</h3>
+        <h2 x-cloak x-show="shown" class="head slideup-1" style="position: relative">
           Creating Spaces The That<br />
           A Inspire
         </h2>
       </div>
       <div class="row mt-5">
         <div class="col-12 col-sm-12 col-lg-4" x-data="{ shown: false }" x-intersect.once="shown = true">
-          <div x-show="shown" class="service-item rounded shadow slideup-2">
+          <div x-cloak x-show="shown" class="service-item rounded shadow slideup-2">
             <div class="service-icon" style="
                   background-color: #a6a182;
                   width: 60px;
@@ -263,7 +263,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-12 col-lg-4" x-data="{ shown: false }" x-intersect.once="shown = true">
-          <div x-show="shown" class="service-item2 rounded shadow slideup-3">
+          <div x-cloak x-show="shown" class="service-item2 rounded shadow slideup-3">
             <div class="service-icon" style="
                   background-color: #a6a182;
                   width: 60px;
@@ -290,7 +290,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-12 col-lg-4" x-data="{ shown: false }" x-intersect.once="shown = true">
-          <div x-show="shown" class="service-item rounded shadow slideup-4" id="ser3">
+          <div x-cloak x-show="shown" class="service-item rounded shadow slideup-4" id="ser3">
             <div class="service-icon" style="
                   background-color: #a6a182;
                   width: 60px;
@@ -319,20 +319,20 @@
       </div>
     </div>
     <div class="col-12 col-sm-12 col-lg-4" id="image-col" x-data="{ shown: false }" x-intersect.once="shown = true">
-      <img x-show="shown" src="images/05.jpg" alt="" class="img-fluid slideup-5" id="img-5" />
+      <img x-cloak x-show="shown" src="images/05.jpg" alt="" class="img-fluid slideup-5" id="img-5" />
     </div>
   </div>
 
   <!-- work process -->
   <div class="container mt-5 mb-5" x-data="{ shown: false }" x-intersect.once="shown = true">
-    <div x-show="shown">
+    <div x-cloak x-show="shown">
       <h3 class="text-center small-head slideup-1">Work Process</h3>
       <h2 class="text-center mb-5 head slideup-2">
         Your Space The A Most<br />
         Elevate Without Life
       </h2>
     </div>
-    <div x-show="shown" class="row">
+    <div x-cloak x-show="shown" class="row">
       <div class="col-12 col-sm-12 col-lg-4 slideup-3">
         <div class="card rounded shadow mb-3" id="card1">
           <h2 class="work-number">01</h2>
@@ -409,7 +409,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12 col-lg-6" x-data="{ shown: false }" x-intersect.once="shown = true">
-          <div x-show="shown" class="acheivement">
+          <div x-cloak x-show="shown" class="acheivement">
             <h3 class="small-head slideup-1" style="margin-left: 0px">Our Acheivement</h3>
             <h2 class="head slideup-1" style="margin-left: 0px">
               Building Dreams<br />
@@ -428,7 +428,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-12 col-lg-6" x-data="{ shown: false }" x-intersect.once="shown = true">
-          <div x-show="shown" class="row">
+          <div x-cloak x-show="shown" class="row">
             <div class="col-12 col-sm-12 col-lg-6 slideup-4">
               <div class="card shadow acheivement-card" style="border-radius:0 ;">
                 <i class="fa-solid fa-house acheivement-icon"></i>
@@ -444,7 +444,7 @@
               </div>
             </div>
           </div>
-          <div x-show="shown" class="row">
+          <div x-cloak x-show="shown" class="row">
             <div class="col-12 col-sm-12 col-lg-6 slideup-5">
               <div class="card shadow acheivement-card" style="border-radius:0 ;">
                 <i class="fa-solid fa-window-restore acheivement-icon"></i>
@@ -496,8 +496,8 @@
     <div class="container">
       <div class="testmonials-text pt-5" style="text-align: center;">
         <div x-data="{ shown: false }" x-intersect.once="shown = true">
-          <h2 x-show="shown" class="port-smallhead slideup-1">Clients Testimonial</h2>
-          <h3 x-show="shown" class="port-head slideup-1">Architectural Excellence<br>
+          <h2 x-cloak x-show="shown" class="port-smallhead slideup-1">Clients Testimonial</h2>
+          <h3 x-cloak x-show="shown" class="port-head slideup-1">Architectural Excellence<br>
             Interior Bliss</h3>
         </div>
 
@@ -618,8 +618,8 @@
         
         <div class="expert-team text-center mt-5">
             <div x-data="{ shown: false }" x-intersect.once="shown = true">
-              <h2 x-show="shown" class="port-smallhead slideup-3">Our Expert Team</h2>
-            <h3 x-show="shown" class="port-head mb-5 slideup-3">Unleash The Potential<br>
+              <h2 x-cloak x-show="shown" class="port-smallhead slideup-3">Our Expert Team</h2>
+            <h3 x-cloak x-show="shown" class="port-head mb-5 slideup-3">Unleash The Potential<br>
             Of Your Space</h3>
             </div>
             
@@ -656,12 +656,12 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12 col-lg-6" x-data="{ shown: false }" x-intersect.once="shown = true">
-          <h2 x-show="shown" class="port-smallhead pt-5 slideup-1">FAQ</h2>
-          <h3 x-show="shown" class="port-head slideup-1">Elevate Your Interior<br>
+          <h2 x-cloak x-show="shown" class="port-smallhead pt-5 slideup-1">FAQ</h2>
+          <h3 x-cloak x-show="shown" class="port-head slideup-1">Elevate Your Interior<br>
             The Elevate Lifestyle</h3>
-          <p x-show="shown" class="slideup-2">Aliquam eros justo, posuere loborti laorematullamcorper the posuer viverra
+          <p x-cloak x-show="shown" class="slideup-2">Aliquam eros justo, posuere loborti laorematullamcorper the posuer viverra
             Aliquam eroo, posuere loborti Aliquam eros justo, posu laorematullamcorper the a posuer viverra .Aliquam</p>
-          <div x-show="shown" class="card p-4 faq-card slideup-3">
+          <div x-cloak x-show="shown" class="card p-4 faq-card slideup-3">
             <div class="d-flex">
               <img src="images/cushion.png" class="me-5 ms-4" alt="">
               <span style="font-size: 30px;font-weight: 700;" class="me-5 mt-2">2k+</span>
@@ -672,7 +672,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-12 col-lg-6 pb-5" x-data="{ shown: false }" x-intersect.once="shown = true">
-          <div x-show="shown" class="accordion mt-5" id="accordionExample">
+          <div x-cloak x-show="shown" class="accordion mt-5" id="accordionExample">
             <div class="accordion-item mb-3 p-3 slideup-4" style="background-color: #a6a182;color: #fff;">
               <h2 class="accordion-header">
                 <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -746,15 +746,15 @@
   <!--PricingPlan-->
   <div class="container mb-5">
     <div x-data="{ shown: false }" x-intersect.once="shown = true">
-      <h2 x-show="shown" class="small-head text-center pt-5 slideup-1">Pricing Plan</h2>
-      <h3 x-show="shown" class="head text-center mb-5 slideup-1">Unleash The Potential<br>
+      <h2 x-cloak x-show="shown" class="small-head text-center pt-5 slideup-1">Pricing Plan</h2>
+      <h3 x-cloak x-show="shown" class="head text-center mb-5 slideup-1">Unleash The Potential<br>
         Of Your Space</h3>
     </div>
     <div class="row">
       <div class="col-lg-3 price-plan mb-5" style="text-align: center;" x-data="{ shown: false }"
         x-intersect.once="shown = true">
-        <img x-show="shown" src="images/21.jpg" class="rounded img-fluid position-relative slideup-2" alt="">
-        <div x-show="shown" class="card p-3 price-container slideup-2"
+        <img x-cloak x-show="shown" src="images/21.jpg" class="rounded img-fluid position-relative slideup-2" alt="">
+        <div x-cloak x-show="shown" class="card p-3 price-container slideup-2"
           style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);position: relative;">
           <p class="price-title">AestheticCore</p>
           <p>Lorem Ipsum is simply the dummy man</p>
@@ -765,8 +765,8 @@
       </div>
       <div class="col-lg-3 price-plan mb-5" style="text-align: center;" x-data="{ shown: false }"
         x-intersect.once="shown = true">
-        <img x-show="shown" src="images/21.jpg" class="rounded img-fluid position-relative slideup-3" alt="">
-        <div x-show="shown" class="card p-3 price-container slideup-3"
+        <img x-cloak x-show="shown" src="images/21.jpg" class="rounded img-fluid position-relative slideup-3" alt="">
+        <div x-cloak x-show="shown" class="card p-3 price-container slideup-3"
           style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);position: relative;">
           <p class="price-title">AestheticCore</p>
           <p>Lorem Ipsum is simply the dummy man</p>
@@ -777,8 +777,8 @@
       </div>
       <div class="col-lg-3 price-plan mb-5" style="text-align: center;" x-data="{ shown: false }"
         x-intersect.once="shown = true">
-        <img x-show="shown" src="images/21.jpg" class="rounded img-fluid position-relative slideup-4" alt="">
-        <div x-show="shown" class="card p-3 price-container slideup-4"
+        <img x-cloak x-show="shown" src="images/21.jpg" class="rounded img-fluid position-relative slideup-4" alt="">
+        <div x-cloak x-show="shown" class="card p-3 price-container slideup-4"
           style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);position: relative;">
           <p class="price-title">AestheticCore</p>
           <p>Lorem Ipsum is simply the dummy man</p>
@@ -789,8 +789,8 @@
       </div>
       <div class="col-lg-3 price-plan mb-5" style="text-align: center;" x-data="{ shown: false }"
         x-intersect.once="shown = true">
-        <img x-show="shown" src="images/21.jpg" class="rounded img-fluid position-relative slideup-5" alt="">
-        <div x-show="shown" class="card p-3 price-container slideup-5"
+        <img x-cloak x-show="shown" src="images/21.jpg" class="rounded img-fluid position-relative slideup-5" alt="">
+        <div x-cloak x-show="shown" class="card p-3 price-container slideup-5"
           style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);position: relative;">
           <p class="price-title">AestheticCore</p>
           <p>Lorem Ipsum is simply the dummy man</p>
@@ -805,8 +805,8 @@
   <!--Blogs&News-->
   <div class="container">
     <div x-data="{ shown: false }" x-intersect.once="shown = true">
-      <h2 x-show="shown" class="port-smallhead slideup-1">Latest Blog And News</h2>
-      <h3 x-show="shown" class="port-head slideup-1">Crafting Spaces That The<br>
+      <h2 x-cloak x-show="shown" class="port-smallhead slideup-1">Latest Blog And News</h2>
+      <h3 x-cloak x-show="shown" class="port-head slideup-1">Crafting Spaces That The<br>
         Reflect Your Style</h3>
     </div>
     <div class="owl-carousel mt-5" id="news">
@@ -866,9 +866,9 @@
     <div class="row pt-5 footer-row">
 
       <div class="col-12 col-lg-3 logo-column" x-data="{ shown: false }" x-intersect.once="shown = true">
-        <h1 x-show="shown" class="slideup-1">LOGO</h1>
-        <p x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
-        <div x-show="shown" class="d-flex social-icons slideup-1">
+        <h1 x-cloak x-show="shown" class="slideup-1">LOGO</h1>
+        <p x-cloak x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
+        <div x-cloak x-show="shown" class="d-flex social-icons slideup-1">
           <a href="#" class="social-links"><i class="fa-brands fa-facebook-f facebook-icon me-3"></i></a></i>
           <a href="#" class="social-links"><i class="fa-brands fa-twitter ficon me-3"></i></a>
           <a href="#" class="social-links"><i class="fa-brands fa-vimeo-v ficon me-3"></i></a>
@@ -876,8 +876,8 @@
         </div>
       </div>
       <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-        <h4 x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
-        <ul x-show="shown" class="footer-list slideup-3">
+        <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
+        <ul x-cloak x-show="shown" class="footer-list slideup-3">
           <li class="mt-4 list"><i class="fa-solid fa-minus"
               style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right"
               style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Architecture Plus</li>
@@ -897,8 +897,8 @@
       </div>
 
       <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-        <h4 x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
-        <ul x-show="shown" class="footer-list slideup-5">
+        <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
+        <ul x-cloak x-show="shown" class="footer-list slideup-5">
           <li class="mt-4 list"><i class="fa-solid fa-minus"
               style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right"
               style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;
@@ -918,8 +918,8 @@
         </ul>
       </div>
       <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-        <h4 x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
-        <ul x-show="shown" class="footer-list slideup-7">
+        <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
+        <ul x-cloak x-show="shown" class="footer-list slideup-7">
           <div class="input-group d-flex">
             <input type="text" placeholder="Your Email Address" class="input">
             <button class="email-button"><i class="fa-solid fa-paper-plane"></i></button>

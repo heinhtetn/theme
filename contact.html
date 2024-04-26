@@ -132,9 +132,9 @@
     <main>
         <section class="banner">
             <img class="w-100 h-100" src="images/contact-banner.jpg" alt="banner image">
-            <div class="text-white">
-                <h1 class="slideup-1 fw-bold banner-text text-center">Contact Us</h1>
-                <p class="slideup-1 banner-breads">Home <i
+            <div class="text-white" x-data="{ shown: false }" x-intersect.once="shown = true">
+                <h1 x-cloak x-show="shown" class="slideup-1 fw-bold banner-text text-center">Contact Us</h1>
+                <p x-cloak x-show="shown" class="slideup-1 banner-breads">Home <i
                         class="fa-solid fa-chevron-right fa-xs mx-1"></i> Contact Us</p>
             </div>
         </section>
@@ -155,7 +155,7 @@
                     <div class="mt-4">
                         <div class="row g-2">
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
-                                <div x-show="shown">
+                                <div x-cloak x-show="shown">
                                     <div class="slideup-1 d-flex flex-column align-items-start gap-3">
                                         <div class="contact-icon">
                                             <i class="fa-solid fa-phone"></i>
@@ -168,7 +168,7 @@
                                 </div>
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
-                                <div x-show="shown">
+                                <div x-cloak x-show="shown">
                                     <div class="slideup-2 d-flex flex-column align-items-start gap-3">
                                         <div class="contact-icon">
                                             <i class="fa-solid fa-envelope"></i>
@@ -181,7 +181,7 @@
                                 </div>
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
-                                <div x-show="shown">
+                                <div x-cloak x-show="shown">
                                     <div class="slideup-3 d-flex flex-column align-items-start gap-3">
                                         <div class="contact-icon">
                                             <i class="fa-solid fa-location-dot"></i>
@@ -195,7 +195,7 @@
                                 </div>
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6  p-2">
-                                <div x-show="shown">
+                                <div x-cloak x-show="shown">
                                     <div class="slideup-4 d-flex flex-column align-items-start gap-3">
                                         <div class="contact-icon">
                                             <i class="fa-solid fa-link"></i>
@@ -215,40 +215,40 @@
                 <img class="w-100" src="images/get-in-touch.jpg" alt="a picture of a living room">
                 <div class="get-in-touch-absolute bg-white pt-4 pe-4 pb-4 rounded-2 rounded-top-0 rounded-start-0">
                     <div x-data="{ shown: false }" x-intersect.once="shown = true">
-                        <p x-show="shown" class="slideup-1 fw-semibold" style="color: rgb(166, 161, 130)">
+                        <p x-cloak x-show="shown" class="slideup-1 fw-semibold" style="color: rgb(166, 161, 130)">
                             Contact Us</p>
-                        <h2 x-show="shown" class="slideup-2 fs-1 fw-bold mb-4">Get In Tounch</h2>
+                        <h2 x-cloak x-show="shown" class="slideup-2 fs-1 fw-bold mb-4">Get In Tounch</h2>
                     </div>
                     <form action="#" method="post">
                         <div class="row row-gap-3">
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6">
-                                <input x-show="shown" class="slideup-1 form-control py-3 px-4 fs-14" type="text"
+                                <input x-cloak x-show="shown" class="slideup-1 form-control py-3 px-4 fs-14" type="text"
                                     name="name" placeholder="Your Name">
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6">
-                                <input x-show="shown" class="slideup-2 form-control py-3 px-4 fs-14" type="text"
+                                <input x-cloak x-show="shown" class="slideup-2 form-control py-3 px-4 fs-14" type="text"
                                     name='email' placeholder="Your Email">
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6">
-                                <input x-show="shown" class="slideup-2 form-control py-3 px-4 fs-14" type="text"
+                                <input x-cloak x-show="shown" class="slideup-2 form-control py-3 px-4 fs-14" type="text"
                                     name="phone" placeholder="Phone Number">
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-lg-6">
-                                <input x-show="shown" class="slideup-2 form-control py-3 px-4 fs-14" type="text"
+                                <input x-cloak x-show="shown" class="slideup-2 form-control py-3 px-4 fs-14" type="text"
                                     name='subject' placeholder="Subject">
                             </div>
                             <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12">
-                                <textarea x-show="shown" class="slideup-2 form-control col-12 py-3 px-4 fs-14"
+                                <textarea x-cloak x-show="shown" class="slideup-2 form-control col-12 py-3 px-4 fs-14"
                                     name="message" rows="5" placeholder="Message here..."></textarea>
                             </div>
 
                             <div x-data="{ shown: false }" x-intersect.once="shown = true">
-                                <!-- <button x-show="shown"
+                                <!-- <button x-cloak x-show="shown"
                                     class="slideup-2 hover-black-bg theme-color btn text-white px-4 py-3 fw-semibold fs-14">
                                     Submit now <i class="fa-solid fa-arrow-right"></i>
                                 </button> -->
                                 <div style="position: relative; width: 180px;">
-                                    <button x-show="shown"
+                                    <button x-cloak x-show="shown"
                                         class="w-100 slideup-2 btn theme-color theme-btn text-white px-4 py-3 fw-semibold fs-14">
                                         Submit now <i class="fa-solid fa-arrow-right"></i>
                                     </button>
@@ -266,9 +266,9 @@
     <footer class="footer">
         <div x-data="{ shown: false }" x-intersect.once="shown = true"
               class="footer-absolute theme-color d-flex justify-content-end">
-              <img x-show="shown" class="slideup-1 circle-border" src="images/circle-border.png" alt="circle border">
-              <img x-show="shown" class="slideup-2 guy-standing" src="images/guy-standing.png" alt="guy standing">
-              <div x-show="shown" class="slideup-3 w-75">
+              <img x-cloak x-show="shown" class="slideup-1 circle-border" src="images/circle-border.png" alt="circle border">
+              <img x-cloak x-show="shown" class="slideup-2 guy-standing" src="images/guy-standing.png" alt="guy standing">
+              <div x-cloak x-show="shown" class="slideup-3 w-75">
                   <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
                       <p class="fs-35 fw-bold w-50">Crafting spaces that
                           the reflect style</p>
@@ -280,9 +280,9 @@
         <div class="row pt-5 footer-row">
             
             <div class="col-12 col-lg-3 logo-column" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <h1 x-show="shown" class="slideup-1">LOGO</h1>
-                <p x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
-                <div x-show="shown" class="d-flex social-icons slideup-1">
+                <h1 x-cloak x-show="shown" class="slideup-1">LOGO</h1>
+                <p x-cloak x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
+                <div x-cloak x-show="shown" class="d-flex social-icons slideup-1">
                     <a href="#" class="social-links"><i class="fa-brands fa-facebook-f facebook-icon me-3"></i></a></i>
                     <a href="#" class="social-links"><i class="fa-brands fa-twitter ficon me-3"></i></a>
                     <a href="#" class="social-links"><i class="fa-brands fa-vimeo-v ficon me-3"></i></a>
@@ -290,8 +290,8 @@
                 </div>
             </div>
             <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <h4 x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
-                <ul x-show="shown" class="footer-list slideup-3">
+                <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
+                <ul x-cloak x-show="shown" class="footer-list slideup-3">
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Architecture Plus</li>
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Urban Oasis</li>
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;The Design Studio</li>
@@ -301,8 +301,8 @@
             </div>
             
             <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <h4 x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
-                <ul x-show="shown" class="footer-list slideup-5">
+                <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
+                <ul x-cloak x-show="shown" class="footer-list slideup-5">
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;
                         Spacecraft Studio</li>
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Interiorscape Design</li>
@@ -312,8 +312,8 @@
                 </ul>
             </div>
             <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <h4 x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
-                <ul x-show="shown" class="footer-list slideup-7">
+                <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
+                <ul x-cloak x-show="shown" class="footer-list slideup-7">
                     <div class="input-group d-flex">
                         <input type="text" placeholder="Your Email Address" class="input">
                         <button class="email-button"><i class="fa-solid fa-paper-plane"></i></button>

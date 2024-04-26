@@ -1,4 +1,6 @@
 /* general */
+[x-cloak] { display: none !important; }
+
 
 :root {
     --theme-color: rgb(166, 161, 130);
