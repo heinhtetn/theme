@@ -131,10 +131,10 @@
       </header>
     <main>
         <section class="banner">
-            <img class="w-100 h-100" src="/images/contact-banner.jpg" alt="contact-banner">
-            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="text-white">
-                <h1 x-show="shown" class="slideup-1 fw-bold banner-text text-center">Service</h1>
-                <p x-show="shown" class="slideup-1 banner-breads">Home <i
+            <img class="w-100 h-100" src="images/contact-banner.jpg" alt="banner image">
+            <div class="text-white">
+                <h1 class="slideup-1 fw-bold banner-text text-center">Service</h1>
+                <p class="slideup-1 banner-breads">Home <i
                         class="fa-solid fa-chevron-right fa-xs mx-1"></i> Service</p>
             </div>
         </section>
@@ -323,10 +323,10 @@
                             Now
                             &rarr;</button> -->
 
-                        <div style="position: relative; width: 200px;">
+                        <div style="position: relative; width: 210px;">
                             <button x-show="shown"
                                 class="w-100 slideup-2 btn theme-color theme-btn text-white px-4 py-3 fw-semibold fs-14">
-                                Appointment now &rarr;
+                                Appointment now <span><i class="fa-solid fa-arrow-right"></i></span>
                             </button>
                         </div>
 
@@ -337,11 +337,11 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer services-footer">
         <div x-data="{ shown: false }" x-intersect.once="shown = true"
               class="footer-absolute theme-color d-flex justify-content-end">
-              <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
-              <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
+              <img x-show="shown" class="slideup-1 circle-border" src="images/circle-border.png" alt="circle border">
+              <img x-show="shown" class="slideup-2 guy-standing" src="images/guy-standing.png" alt="guy standing">
               <div x-show="shown" class="slideup-3 w-75">
                   <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
                       <p class="fs-35 fw-bold w-50">Crafting spaces that
@@ -413,7 +413,7 @@
                 </ul>
             </div>
         </div>
-        <img class="rose-shape" src="/images/footer-shape.png" alt="shape of a rose">
+        <img class="rose-shape" src="images/footer-shape.png" alt="shape of a rose">
     </footer>
   
   

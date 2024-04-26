@@ -225,6 +225,10 @@ footer:not(.home-footer) {
     margin-top: 0 !important;
 }
 
+.about-footer{
+    margin-top: 0 !important;
+}
+
 .footer-absolute {
     position: absolute;
     left: 10%;
@@ -448,9 +452,13 @@ iframe {
     min-height: 550px;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
     .get-in-touch-absolute {
         width: 100%;
+    }
+
+    .get-in-touch img {
+        min-height: 700px;
     }
 }
 
@@ -1445,7 +1453,7 @@ input::placeholder {
     }
 
     #testi {
-        height: 1150px;
+        min-height: 1150px;
     }
 
     /*-----expertTeam-----*/
@@ -1536,7 +1544,16 @@ footer {
     margin: 0 auto;
 }
 
+/* about */
 
+#testi {
+    padding-bottom: 450px;
+}
 
+@media screen and (min-width: 768px) {
+    #testi {
+        padding-bottom: 100px;
+    }
+}
 
 
