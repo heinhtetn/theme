@@ -450,60 +450,8 @@ iframe {
     }
 }
 
-/* services */
-
-.input-with-icon {
-    position: relative;
-}
-
-.input-with-icon i {
-    position: absolute;
-    right: 18px;
-    top: 18px;
-    width: 10px;
-    font-size: 14px;
-}
-
-.services-section {
-    min-height: 450px;
-}
-
-.service {
-    padding: 35px 20px 20px 20px;
-    position: relative;
-}
-
-.service-icon {
-    position: absolute;
-    left: 25px;
-    top: -25px;
-    padding: 15px;
-    font-size: 18px;
-    background-color: var(--theme-color);
-}
-
-.appointment-section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 50px auto;
-}
-
-/* service detail */
-
-.fa-circle-chevron-right {
-    font-size: 18px;
-    color: var(--theme-color);
-}
-
-.need-help {
-    background-image: url('/images/post-bg.jpg');
-}
-
-.need-help-content {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
 /*-----Navigation Bar & Address Bar*/
+
 .social {
     display: flex;
     justify-content: center;
@@ -585,7 +533,7 @@ iframe {
 
 .border-col1 {
     position: relative;
-    top: 400px;
+    top: 350px;
     left: 70px;
 }
 
@@ -597,15 +545,18 @@ iframe {
 .border1 {
     border: 1px solid grey;
     border-radius: 5px;
-    width: 300px;
-    height: 360px;
+    width: 36%;
+    height: 350px;
 }
 
 .border2 {
+    position: absolute;
+    left: -8%;
+    top: -10%;
     border: 1px solid grey;
     border-radius: 5px;
-    width: 500px;
-    height: 680px;
+    width: 60%;
+    height: 190%;
 }
 
 .border3 {
@@ -628,7 +579,7 @@ iframe {
 .img2 {
     position: absolute;
     top: 220px;
-    left: 800px;
+    left: 48%;
 }
 
 .star {
@@ -642,7 +593,7 @@ iframe {
     width: 260px;
     position: absolute;
     left: 62%;
-    top: 50%;
+    top: 78%;
 }
 /*-----AboutUs-----*/
 .cover {
@@ -1120,6 +1071,60 @@ input::placeholder {
 }
 
 
+/* services */
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    width: 10px;
+    font-size: 14px;
+}
+
+.services-section {
+    min-height: 450px;
+}
+
+.service {
+    padding: 35px 20px 20px 20px;
+    position: relative;
+}
+
+.service-icon {
+    position: absolute;
+    left: 25px;
+    top: -25px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: var(--theme-color);
+}
+
+.appointment-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* service detail */
+
+.fa-circle-chevron-right {
+    font-size: 18px;
+    color: var(--theme-color);
+}
+
+.need-help {
+    background-image: url('/images/post-bg.jpg');
+}
+
+.need-help-content {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
 .slideup-1 {
     animation: slideup-ani 1s ease-in-out;
 }
@@ -1197,8 +1202,8 @@ input::placeholder {
         display: none;
     }
     .client-box{
-        left: 22%;
-        top: 10%px;
+        left: 80px;
+        top: 540px;
         z-index: 2;
     }
     .cli-img{
@@ -1249,16 +1254,20 @@ input::placeholder {
     }
 
     .border-col2 {
+        position: relative;
         left: 0;
         right: 0;
-        top: 109%;
+        display: none;
     }
 
     .border2 {
-        left: 0;
+        position: absolute;
+        left: 10%;
         right: 0;
+        top: 1150%;
         width: 170px;
-        height: 170px;
+        height: 190px;
+        background-color: yellow;
     }
 
     .star {
@@ -1266,14 +1275,15 @@ input::placeholder {
     }
 
     .border3 {
-        left: 350px;
-        top: 39%;
+        left: 90%;
+        top: 246px;
+        
     }
 
     .img1 {
-        left: 210px;
+        left: 53%;
         right: 0;
-        top: 43%;
+        top: 255px;
         z-index: 1;
         width: 40%;
     }
@@ -1282,7 +1292,7 @@ input::placeholder {
         left: 5%;
         right: 0px;
         width: 90%;
-        top: 42%;
+        top: 250px;
     }
 
     #row {
