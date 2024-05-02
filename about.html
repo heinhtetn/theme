@@ -1,756 +1,711 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testing</title>
-    <link rel="stylesheet" href="style1.css" />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!--Owl Carousel-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!--Header-->
-    <header>
-      <!--AddressBar-->
-      <div class="container-fluid">
-        <div class="row" style="background-color: #f8f8f8" id="hide">
-          <div
-            class="col-12 col-sm-12 col-lg-7 pt-2 pb-2 info"
-            style="background-color: #f8f8f8"
-          >
-            <span class="infotext"
-              ><i
-                class="fa-solid fa-location-dot me-2"
-                style="color: #a6a182"
-              ></i>
-              6391 Elgin St. Celina, 10299
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- custom css -->
+  <link rel="stylesheet" href="style1.css">
+  <!--Owl Carousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>About</title>
+</head>
+
+
+<body>
+  <!--Header-->
+  <header>
+    <!--AddressBar-->
+    <div class="container-fluid">
+      <div class="row" style="background-color: #f8f8f8" id="hide">
+        <div class="col-12 col-sm-12 col-lg-7 pt-2 pb-2 info" style="background-color: #f8f8f8">
+          <span class="infotext"><i class="fa-solid fa-location-dot me-2" style="color: #a6a182"></i>
+            6391 Elgin St. Celina, 10299
+          </span>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-5 social p-2" style="background-color: #a6a182">
+          <span class="dummy"></span>
+          <div class="d-flex" id="flex">
+            <span class="ps-4">info@example.com</span>
+            <span class="ms-4">
+              <i class="fa-brands fa-facebook-f me-4"></i>
+              <i class="fa-brands fa-twitter me-4"></i>
+              <i class="fa-brands fa-vimeo-v me-4"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
             </span>
           </div>
-          <div
-            class="col-12 col-sm-12 col-lg-5 social p-2"
-            style="background-color: #a6a182"
-          >
-            <span class="dummy"></span>
-            <div class="d-flex" id="flex">
-              <span class="ps-4">info@example.com</span>
-              <span class="ms-4">
-                <i class="fa-brands fa-facebook-f me-4"></i>
-                <i class="fa-brands fa-twitter me-4"></i>
-                <i class="fa-brands fa-vimeo-v me-4"></i>
-                <i class="fa-brands fa-pinterest-p"></i>
-              </span>
+        </div>
+      </div>
+    </div>
+    <!--NavigationBar-->
+    <!-- <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item me-5 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="services.html">Services</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="service-detail.html">Service Details</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item me-5 nav-hide">
+              <i class="fa-solid fa-cart-shopping" style="margin-top: 11px; padding-left: 200px"></i>
+            </li>
+            <li class="nav-item me-5 nav-hide">
+              <i class="fa-solid fa-magnifying-glass" style="margin-top: 11px"></i>
+            </li>
+            <li class="nav-item">
+              <button class="btn p-2" id="button">
+                Get A Quote<i class="fa-solid fa-arrow-right-long ms-2"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+  </header>
+  <!--Banner-->
+  <!-- <section class="banner">
+    <img class="w-100 h-100" src="images/contact-banner.jpg" alt="banner image">
+    <div class="text-white" x-data="{ shown: false }" x-intersect.once="shown = true">
+      <h1 x-cloak x-show="shown" class="slideup-1 fw-bold banner-text text-center">About Us</h1>
+      <p x-cloak x-show="shown" class="slideup-1 banner-breads">Home <i class="fa-solid fa-chevron-right fa-xs mx-1"></i> About
+      </p>
+    </div>
+  </section> -->
+  <!--About Us-->
+  <div class="container mt-2" id="container" style="margin-bottom: 100px;min-height: 500px;">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-lg-6">
+        <div class="row">
+          <div class="col-lg-5" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <div x-cloak x-show="shown" class="cover p-5 rounded slideup-1">
+              <h3 style="color: #fff" class="achi-counter" data-val="25">0+</h3>
+              <h4 style="color: #fff">Years of Experience</h4>
             </div>
           </div>
-        </div>
-      </div>
-      <!--NavigationBar-->
-      <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container">
-          <a class="navbar-brand" href="">LOGO</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item me-5">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item me-5">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item me-5 dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="services.html">Services</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="service-detail.html"
-                      >Service Details</a
-                    >
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item me-5">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item me-5 nav-hide">
-                <i
-                  class="fa-solid fa-cart-shopping"
-                  style="margin-top: 11px; padding-left: 200px"
-                ></i>
-              </li>
-              <li class="nav-item me-5 nav-hide">
-                <i
-                  class="fa-solid fa-magnifying-glass"
-                  style="margin-top: 11px"
-                ></i>
-              </li>
-              <li class="nav-item">
-                <button class="btn p-2" id="button">
-                  Get A Quote<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                </button>
-              </li>
-            </ul>
+          <div class="col-lg-7 img3" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <img x-cloak x-show="shown" src="images/04.jpg" alt="" class="rounded img-fluid image-3 slideup-2" />
           </div>
         </div>
-      </nav>
-    </header>
-    <!--Banner-->
-    <section class="banner">
-      <img class="w-100 h-100" src="/images/contact-banner.jpg" alt="contact-banner">
-      <div x-data="{ shown: false }" x-intersect.once="shown = true" class="text-white">
-          <h1 x-show="shown" class="slideup-1 fw-bold banner-text text-center">About Us</h1>
-          <p x-show="shown" class="slideup-1 banner-breads">Home <i
-                  class="fa-solid fa-chevron-right fa-xs mx-1"></i> About</p>
+        <div class="row">
+          <div class="col-lg-10 img4" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <img x-cloak x-show="shown" src="images/03.jpg" alt="" class="rounded img-fluid image-3 slideup-3" />
+          </div>
+          <div class="col-lg-2 hide"></div>
+        </div>
       </div>
-    </section>
-    <!--About Us-->
-    <div class="container mt-2" id="container" style="margin-bottom: 100px;min-height: 500px;">
+      <div class="col-12 col-sm-12 col-lg-6" x-data="{ shown: false }" x-intersect.once="shown = true">
+        <div x-cloak x-show="shown" class="about-para">
+          <h4 class="small-head slideup-4">About Us</h4>
+          <h3 class="head slideup-4">Design Your Space To Elevate Your Life</h3>
+          <div class="para">
+            <p class="slideup-5">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit torquent
+              nu nascetu cubilia tempor lacus natoque quis auctor mattis
+              luctus varius pretium aptent urna iaculis suspendisse eros
+              egestas mollis dis nisl commodo.
+            </p>
+            <p class="slideup-5">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit torquent
+              nu nascetu cubilia tempor lacus natoque quis auctor mattis
+              luctus varius
+            </p>
+            <button class="btn ps-4 p-4 pt-3 pb-3 slideup-6" id="readmore">
+              Read More &nbsp;&nbsp;
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--WorkProcess-->
+  <div class="container-fluid" style="margin-top: 100px;">
+    <div x-data="{ shown: false }" x-intersect.full="shown = true">
+      <h5 x-cloak x-show="shown" class="small-head text-center slideup-1">Work Process</h5>
+      <h1 x-cloak x-show="shown" class="head text-center slideup-1">
+        Your Space The A Most <br>
+        Elevate Without Life
+      </h1>
+    </div>
+    <div class="row d-flex justify-content-center mt-5">
+
+      <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.full="shown = true">
+        <div x-cloak x-show="shown" class="row process">
+          <div class="col-10 slideup-2">
+            <h4>Blueprint Builders</h4>
+          </div>
+          <div class="col-2 slideup-2">
+            <h3 style="font-size: 35px;color: #a6a182;">01</h3>
+          </div>
+        </div>
+        <div x-cloak x-show="shown" class="row slideup-2">
+          <p>This category focuses on the design construction of buildings and the arrangement</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.full="shown = true">
+        <div x-cloak x-show="shown" class="row process">
+          <div class="col-10 slideup-3">
+            <h4>Artistic Architecture</h4>
+          </div>
+          <div class="col-2 slideup-3">
+            <h3 style="font-size: 35px;color: #a6a182;">02</h3>
+          </div>
+        </div>
+        <div x-cloak x-show="shown" class="row slideup-3">
+          <p>This category focuses on the design construction of buildings and the arrangement</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+        <div x-cloak x-show="shown" class="row process slideup-4">
+          <div class="col-10">
+            <h4>Interior Scape Design</h4>
+          </div>
+          <div class="col-2">
+            <h3 style="font-size: 35px;color: #a6a182;">03</h3>
+          </div>
+        </div>
+        <div x-cloak x-show="shown" class="row slideup-4">
+          <p>This category focuses on the design construction of buildings and the arrangement</p>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mb-5">
+
+      <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+        <div x-cloak x-show="shown" class="row process slideup-5">
+          <div class="col-10">
+            <h4>Conceptual Spaces</h4>
+          </div>
+          <div class="col-2">
+            <h3 style="font-size: 35px;color: #a6a182;">04</h3>
+          </div>
+        </div>
+        <div x-cloak x-show="shown" class="row slideup-5">
+          <p>This category focuses on the design construction of buildings and the arrangement</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+        <div x-cloak x-show="shown" class="row process slideup-6">
+          <div class="col-10">
+            <h4>Inspire Design Group</h4>
+          </div>
+          <div class="col-2">
+            <h3 style="font-size: 35px;color: #a6a182;">05</h3>
+          </div>
+        </div>
+        <div x-cloak x-show="shown" class="row slideup-6">
+          <p>This category focuses on the design construction of buildings and the arrangement</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+        <div x-cloak x-show="shown" class="row process slideup-7">
+          <div class="col-10">
+            <h4>Modern Living Spaces</h4>
+          </div>
+          <div class="col-2">
+            <h3 style="font-size: 35px;color: #a6a182;">06</h3>
+          </div>
+        </div>
+        <div x-cloak x-show="shown" class="row slideup-7">
+          <p>This category focuses on the design construction of buildings and the arrangement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Logo-->
+  <div class="container-fluid pt-5 pb-5" style="background-color: #f8f8f8">
+    <div class="container">
+      <div class="owl-carousel owl-theme" id="icons">
+        <div class="item">
+          <img src="images/06.png" id="owl-icon" alt="Owl Image" />
+        </div>
+        <div class="item">
+          <img src="images/07.png" id="owl-icon2" alt="Owl Image" />
+        </div>
+        <div class="item">
+          <img src="images/08.png" id="owl-icon" alt="Owl Image" />
+        </div>
+        <div class="item">
+          <img src="images/09.png" id="owl-icon" alt="Owl Image" />
+        </div>
+        <div class="item">
+          <img src="images/06.png" id="owl-icon" alt="Owl Image" />
+        </div>
+        <div class="item">
+          <img src="images/07.png" id="owl-icon2" alt="Owl Image" />
+        </div>
+        <div class="item">
+          <img src="images/08.png" id="owl-icon" alt="Owl Image" />
+        </div>
+        <div class="item">
+          <img src="images/09.png" id="owl-icon" alt="Owl Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--OurAcheivement-->
+  <div class="container-fluid" style="background-color: #f8f8f8;">
+    <img src="images/shape.png" class="shape-image" alt="">
+    <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-12 col-lg-6">
-          <div class="row">
-            <div class="col-lg-5" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <div x-show="shown" class="cover p-5 rounded slideup-1">
-                <h3 style="color: #fff" class="achi-counter" data-val="25">0+</h3>
-                <h4 style="color: #fff">Years of Experience</h4>
-              </div>
-            </div>
-            <div class="col-lg-7 img3" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <img x-show="shown" src="images/04.jpg" alt="" class="rounded img-fluid image-3 slideup-2" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-10 img4" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <img x-show="shown" src="images/03.jpg" alt="" class="rounded img-fluid image-3 slideup-3" />
-            </div>
-            <div class="col-lg-2 hide"></div>
+        <div class="col-12 col-sm-12 col-lg-6" x-data="{ shown: false }" x-intersect.once="shown = true">
+          <div x-cloak x-show="shown" class="acheivement">
+            <h3 class="small-head slideup-1" style="margin-left: 0px">Our Acheivement</h3>
+            <h2 class="head slideup-1" style="margin-left: 0px">
+              Building Dreams<br />
+              One Room At A Time
+            </h2>
+            <p class="slideup-2">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu
+              nascetu cubilia tempor lacus natoque quis auctor mattis luctus
+              varius pretium aptent urna iaculis suspendisse eros egestas mollis
+              dis nisl commodo.
+            </p>
+            <button class="btn btn-outline-primary ps-4 p-4 pt-3 pb-3 slideup-3" id="readmore2">
+              Read More &nbsp;&nbsp;
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-lg-6" x-data="{ shown: false }" x-intersect.once="shown = true">
-          <div x-show="shown" class="about-para">
-            <h4 class="small-head slideup-4">About Us</h4>
-            <h3 class="head slideup-4">Design Your Space To Elevate Your Life</h3>
-            <div class="para">
-              <p class="slideup-5">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit torquent
-                nu nascetu cubilia tempor lacus natoque quis auctor mattis
-                luctus varius pretium aptent urna iaculis suspendisse eros
-                egestas mollis dis nisl commodo.
-              </p>
-              <p class="slideup-5">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit torquent
-                nu nascetu cubilia tempor lacus natoque quis auctor mattis
-                luctus varius
-              </p>
-              <button class="btn ps-4 p-4 pt-3 pb-3 slideup-6" id="readmore">
-                Read More &nbsp;&nbsp;
-                <i class="fa-solid fa-arrow-right-long"></i>
-              </button>
+          <div x-cloak x-show="shown" class="row">
+            <div class="col-12 col-sm-12 col-lg-6 slideup-4">
+              <div class="card shadow acheivement-card" style="border-radius:0 ;">
+                <i class="fa-solid fa-house acheivement-icon"></i>
+                <h2 class="achi-counter" data-val="90">0+</h2>
+                <p class="achi-para">Projects Done</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 slideup-4">
+              <div class="card shadow acheivement-card" style="border-radius:0 ;">
+                <i class="fa-solid fa-door-open acheivement-icon"></i>
+                <h2 class="achi-counter" data-val="900">0+</h2>
+                <p class="achi-para">Team Members</p>
+              </div>
+            </div>
+          </div>
+          <div x-cloak x-show="shown" class="row">
+            <div class="col-12 col-sm-12 col-lg-6 slideup-5">
+              <div class="card shadow acheivement-card" style="border-radius:0 ;">
+                <i class="fa-solid fa-window-restore acheivement-icon"></i>
+                <h2 class="achi-counter" data-val="700">0+</h2>
+                <p class="achi-para">Client Review</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 slideup-5">
+              <div class="card shadow acheivement-card" style="border-radius:0 ;">
+                <i class="fa-regular fa-newspaper acheivement-icon"></i>
+                <h2 class="achi-counter" data-val="80">0+</h2>
+                <p class="achi-para">Winning Award</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!--WorkProcess-->
-    <div class="container-fluid" style="margin-top: 100px;">
-      <div x-data="{ shown: false }" x-intersect.full="shown = true">
-        <h5 x-show="shown" class="small-head text-center slideup-1">Work Process</h5>
-      <h1 x-show="shown" class="head text-center slideup-1">
-          Your Space The A Most <br>
-          Elevate Without Life
-      </h1> 
-      </div>
-      <div class="row d-flex justify-content-center mt-5">
-          
-              <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.full="shown = true">
-                  <div x-show="shown" class="row process">
-                      <div class="col-10 slideup-2">
-                          <h4>Blueprint Builders</h4>
-                      </div>
-                      <div class="col-2 slideup-2">
-                          <h3 style="font-size: 40px;color: #a6a182;">01</h3>
-                      </div>
-                  </div>
-                  <div x-show="shown" class="row slideup-2">
-                      <p>This category focuses on the design construction of buildings and the arrangement</p>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.full="shown = true">
-                  <div x-show="shown" class="row process">
-                      <div class="col-10 slideup-3">
-                          <h4>Artistic Architecture</h4>
-                      </div>
-                      <div class="col-2 slideup-3">
-                          <h3 style="font-size: 40px;color: #a6a182;">02</h3>
-                      </div>
-                  </div>
-                  <div x-show="shown" class="row slideup-3">
-                      <p>This category focuses on the design construction of buildings and the arrangement</p>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-                  <div x-show="shown" class="row process slideup-4">
-                      <div class="col-10">
-                          <h4>Interior Scape Design</h4>
-                      </div>
-                      <div class="col-2">
-                          <h3 style="font-size: 40px;color: #a6a182;">03</h3>
-                      </div>
-                  </div>
-                  <div x-show="shown" class="row slideup-4">
-                      <p>This category focuses on the design construction of buildings and the arrangement</p>
-                  </div>
-              </div>
-      </div>
-      <div class="row d-flex justify-content-center mb-5">
-          
-          <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <div x-show="shown" class="row process slideup-5">
-                  <div class="col-10">
-                      <h4>Conceptual Spaces</h4>
-                  </div>
-                  <div class="col-2">
-                      <h3 style="font-size: 40px;color: #a6a182;">04</h3>
-                  </div>
-              </div>
-              <div x-show="shown" class="row slideup-5">
-                  <p>This category focuses on the design construction of buildings and the arrangement</p>
-              </div>
-          </div>
-          <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <div x-show="shown" class="row process slideup-6">
-                  <div class="col-10">
-                      <h4>Inspire Design Group</h4>
-                  </div>
-                  <div class="col-2">
-                      <h3 style="font-size: 40px;color: #a6a182;">05</h3>
-                  </div>
-              </div>
-              <div x-show="shown" class="row slideup-6">
-                  <p>This category focuses on the design construction of buildings and the arrangement</p>
-              </div>
-          </div>
-          <div class="col-12 col-sm-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <div x-show="shown" class="row process slideup-7">
-                  <div class="col-10">
-                      <h4>Modern Living Spaces</h4>
-                  </div>
-                  <div class="col-2">
-                      <h3 style="font-size: 40px;color: #a6a182;">06</h3>
-                  </div>
-              </div>
-              <div x-show="shown" class="row slideup-7">
-                  <p>This category focuses on the design construction of buildings and the arrangement</p>
-              </div>
-          </div>
-        </div>
   </div>
-    <!--Logo-->
-    <div class="container-fluid pt-5 pb-5" style="background-color: #f8f8f8">
-      <div class="container">
-        <div class="owl-carousel owl-theme" id="icons">
-          <div class="item">
-            <img src="images/06.png" id="owl-icon" alt="Owl Image" />
+  <!--Client Testimonials-->
+  <div class="container-fluid" id="testi" style="background-color: #f8f8f8;">
+    <div class="container">
+      <div class="testmonials-text pt-5" style="text-align: center;">
+        <div x-data="{ shown: false }" x-intersect.once="shown = true">
+          <h2 x-cloak x-show="shown" class="port-smallhead slideup-1">Clients Testimonial</h2>
+          <h3 x-cloak x-show="shown" class="port-head slideup-1">Architectural Excellence<br>
+            Interior Bliss</h3>
+        </div>
+
+        <div class="row" id="test-image-row">
+          <div class="col-12 col-sm-12 col-lg-8">
+            <img src="images/11.jpg" alt="" class="img-fluid bg-cover" id="testi-image">
           </div>
+        </div>
+        <div class="owl-carousel owl-theme reviews" id="reviews" style="max-width: 600px;">
           <div class="item">
-            <img src="images/07.png" id="owl-icon2" alt="Owl Image" />
+            <div class="card p-4 client-image">
+              <div class="d-flex">
+                <img src="images/12.png" style="width: 90px;" alt="">
+                <div class="ms-3">
+                  <p class="review-text">Lucas Hudson</p>
+                  <p class="review-position">Marketing Manager</p>
+                </div>
+              </div>
+              <div class="rate mt-2 mb-2">
+                <input type="radio" checked id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+              <p class="testimonial-text" style="line-height: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Iure
+                sapiente
+                numquam ad unde ullam
+                molestiae sunt velit nulla, accusantium fuga. Sunt perspiciatis corrupti provident
+                exercitationem
+                excepturi illum nulla fuga, saepe repellat quis enim, fugiat libero voluptatem minus
+                mollitia
+                animi!
+              </p>
+            </div>
           </div>
-          <div class="item">
-            <img src="images/08.png" id="owl-icon" alt="Owl Image" />
+          <div class="item" style="display: inline;width: 600px;">
+            <div class="card p-4 client-image">
+              <div class="d-flex">
+                <img src="images/12.png" style="width: 90px;" alt="">
+                <div class="ms-3">
+                  <p class="review-text">Lucas Hudson</p>
+                  <p>Marketing Manager</p>
+                </div>
+              </div>
+              <div class="rate mt-2 mb-2">
+                <input type="radio" checked id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+              <p class="testimonial-text" style="line-height: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Iure
+                sapiente
+                numquam ad unde ullam
+                molestiae sunt velit nulla, accusantium fuga. Sunt perspiciatis corrupti provident
+                exercitationem
+                excepturi illum nulla fuga, saepe repellat quis enim, fugiat libero voluptatem minus
+                mollitia
+                animi!
+              </p>
+            </div>
           </div>
-          <div class="item">
-            <img src="images/09.png" id="owl-icon" alt="Owl Image" />
-          </div>
-          <div class="item">
-            <img src="images/06.png" id="owl-icon" alt="Owl Image" />
-          </div>
-          <div class="item">
-            <img src="images/07.png" id="owl-icon2" alt="Owl Image" />
-          </div>
-          <div class="item">
-            <img src="images/08.png" id="owl-icon" alt="Owl Image" />
-          </div>
-          <div class="item">
-            <img src="images/09.png" id="owl-icon" alt="Owl Image" />
+          <div class="item" style="display: inline;width: 600px;">
+            <div class="card p-4 client-image">
+              <div class="d-flex">
+                <img src="images/12.png" style="width: 90px;" alt="">
+                <div class="ms-3">
+                  <p class="review-text">Lucas Hudson</p>
+                  <p>Marketing Manager</p>
+                </div>
+              </div>
+              <div class="rate mt-2 mb-2">
+                <input type="radio" checked id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+              <p class="testimonial-text" style="line-height: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Iure
+                sapiente
+                numquam ad unde ullam
+                molestiae sunt velit nulla, accusantium fuga. Sunt perspiciatis corrupti provident
+                exercitationem
+                excepturi illum nulla fuga, saepe repellat quis enim, fugiat libero voluptatem minus
+                mollitia
+                animi!
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!--OurAcheivement-->
-    <div class="container-fluid" style="background-color: #f8f8f8;">
-      <img src="images/shape.png" class="shape-image" alt="">
-      <div class="container">
-            <div class="row">
-              <div class="col-12 col-sm-12 col-lg-6" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <div x-show="shown" class="acheivement">
-                  <h3 class="small-head slideup-1" style="margin-left: 0px">Our Acheivement</h3>
-                  <h2 class="head slideup-1" style="margin-left: 0px">
-                    Building Dreams<br />
-                    One Room At A Time
-                  </h2>
-                  <p class="slideup-2">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu
-                    nascetu cubilia tempor lacus natoque quis auctor mattis luctus
-                    varius pretium aptent urna iaculis suspendisse eros egestas mollis
-                    dis nisl commodo.
-                  </p>
-                  <button
-                    class="btn btn-outline-primary ps-4 p-4 pt-3 pb-3 slideup-3"
-                    id="readmore2"
-                  >
-                    Read More &nbsp;&nbsp;
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="col-12 col-sm-12 col-lg-6" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <div x-show="shown" class="row">
-                  <div
-                    class="col-12 col-sm-12 col-lg-6 slideup-4"
-                  >
-                    <div class="card shadow acheivement-card" style="border-radius:0 ;">
-                      <i class="fa-solid fa-house acheivement-icon"></i>
-                      <h2 class="achi-counter" data-val="90">0+</h2>
-                      <p class="achi-para">Projects Done</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-12 col-sm-12 col-lg-6 slideup-4"
-                    
-                  >
-                    <div class="card shadow acheivement-card" style="border-radius:0 ;">
-                      <i class="fa-solid fa-door-open acheivement-icon"></i>
-                      <h2 class="achi-counter" data-val="900">0+</h2>
-                      <p class="achi-para">Team Members</p>
-                    </div>
-                  </div>
-                </div>
-                <div x-show="shown" class="row">
-                  <div
-                    class="col-12 col-sm-12 col-lg-6 slideup-5"  
-                  >
-                    <div class="card shadow acheivement-card" style="border-radius:0 ;">
-                      <i class="fa-solid fa-window-restore acheivement-icon"></i>
-                      <h2 class="achi-counter" data-val="700">0+</h2>
-                      <p class="achi-para">Client Review</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-12 col-sm-12 col-lg-6 slideup-5"
-                  >
-                    <div class="card shadow acheivement-card" style="border-radius:0 ;">
-                      <i class="fa-regular fa-newspaper acheivement-icon"></i>
-                      <h2 class="achi-counter" data-val="80">0+</h2>
-                      <p class="achi-para">Winning Award</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
   </div>
-    <!--Client Testimonials-->
-    <div class="container-fluid" id="testi" style="background-color: #f8f8f8">
-      <div class="container">
-          <div class="testmonials-text pt-5" style="text-align: center;">
-              <div x-data="{ shown: false }" x-intersect.once="shown = true">
-                <h2 x-show="shown" class="port-smallhead slideup-1">Clients Testimonial</h2>
-                <h3 x-show="shown" class="port-head slideup-1">Architectural Excellence<br>
-                  Interior Bliss</h3>
+
+  <!--Footer-->
+  <footer class="footer about-footer">
+    <div x-data="{ shown: false }" x-intersect.once="shown = true"
+          class="footer-absolute theme-color d-flex justify-content-end">
+          <img x-cloak x-show="shown" class="slideup-1 circle-border" src="images/circle-border.png" alt="circle border">
+          <img x-cloak x-show="shown" class="slideup-2 guy-standing" src="images/guy-standing.png" alt="guy standing">
+          <div x-cloak x-show="shown" class="slideup-3 w-75">
+              <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
+                  <p class="fs-35 fw-bold w-50">Crafting spaces that
+                      the reflect style</p>
+                  <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
+                          class="fa-solid fa-arrow-right"></i></a>
               </div>
-              
-                  <div class="row" id="test-image-row">
-                      <div class="col-12 col-sm-12 col-lg-8">
-                          <img src="images/11.jpg" alt="" class="img-fluid bg-cover" id="testi-image">
-                      </div>
-                  </div>
-                  <div class="owl-carousel owl-theme reviews" id="reviews" style="max-width: 600px;">
-                      <div class="item">
-                          <div class="card p-4 client-image">
-                              <div class="d-flex">
-                                  <img src="images/12.png" style="width: 90px;" alt="">
-                                  <div class="ms-3">
-                                      <p class="review-text">Lucas Hudson</p>
-                                      <p class="review-position">Marketing Manager</p>
-                                  </div>
-                              </div>
-                              <div class="rate mt-2 mb-2">
-                                  <input type="radio" checked id="star5" name="rate" value="5" />
-                                  <label for="star5" title="text">5 stars</label>
-                                  <input type="radio" id="star4" name="rate" value="4" />
-                                  <label for="star4" title="text">4 stars</label>
-                                  <input type="radio" id="star3" name="rate" value="3" />
-                                  <label for="star3" title="text">3 stars</label>
-                                  <input type="radio" id="star2" name="rate" value="2" />
-                                  <label for="star2" title="text">2 stars</label>
-                                  <input type="radio" id="star1" name="rate" value="1" />
-                                  <label for="star1" title="text">1 star</label>
-                              </div>
-                              <p class="testimonial-text" style="line-height: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-                                  sapiente
-                                  numquam ad unde ullam
-                                  molestiae sunt velit nulla, accusantium fuga. Sunt perspiciatis corrupti provident
-                                  exercitationem
-                                  excepturi illum nulla fuga, saepe repellat quis enim, fugiat libero voluptatem minus
-                                  mollitia
-                                  animi!
-                              </p>
-                          </div>
-                      </div>
-                      <div class="item" style="display: inline;width: 600px;">
-                          <div class="card p-4 client-image">
-                              <div class="d-flex">
-                                  <img src="images/12.png" style="width: 90px;" alt="">
-                                  <div class="ms-3">
-                                      <p class="review-text">Lucas Hudson</p>
-                                      <p>Marketing Manager</p>
-                                  </div>
-                              </div>
-                              <div class="rate mt-2 mb-2">
-                                  <input type="radio" checked id="star5" name="rate" value="5" />
-                                  <label for="star5" title="text">5 stars</label>
-                                  <input type="radio" id="star4" name="rate" value="4" />
-                                  <label for="star4" title="text">4 stars</label>
-                                  <input type="radio" id="star3" name="rate" value="3" />
-                                  <label for="star3" title="text">3 stars</label>
-                                  <input type="radio" id="star2" name="rate" value="2" />
-                                  <label for="star2" title="text">2 stars</label>
-                                  <input type="radio" id="star1" name="rate" value="1" />
-                                  <label for="star1" title="text">1 star</label>
-                              </div>
-                              <p class="testimonial-text" style="line-height: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-                                  sapiente
-                                  numquam ad unde ullam
-                                  molestiae sunt velit nulla, accusantium fuga. Sunt perspiciatis corrupti provident
-                                  exercitationem
-                                  excepturi illum nulla fuga, saepe repellat quis enim, fugiat libero voluptatem minus
-                                  mollitia
-                                  animi!
-                              </p>
-                          </div>
-                      </div>
-                      <div class="item" style="display: inline;width: 600px;">
-                          <div class="card p-4 client-image">
-                              <div class="d-flex">
-                                  <img src="images/12.png" style="width: 90px;" alt="">
-                                  <div class="ms-3">
-                                      <p class="review-text">Lucas Hudson</p>
-                                      <p>Marketing Manager</p>
-                                  </div>
-                              </div>
-                              <div class="rate mt-2 mb-2">
-                                  <input type="radio" checked id="star5" name="rate" value="5" />
-                                  <label for="star5" title="text">5 stars</label>
-                                  <input type="radio" id="star4" name="rate" value="4" />
-                                  <label for="star4" title="text">4 stars</label>
-                                  <input type="radio" id="star3" name="rate" value="3" />
-                                  <label for="star3" title="text">3 stars</label>
-                                  <input type="radio" id="star2" name="rate" value="2" />
-                                  <label for="star2" title="text">2 stars</label>
-                                  <input type="radio" id="star1" name="rate" value="1" />
-                                  <label for="star1" title="text">1 star</label>
-                              </div>
-                              <p class="testimonial-text" style="line-height: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-                                  sapiente
-                                  numquam ad unde ullam
-                                  molestiae sunt velit nulla, accusantium fuga. Sunt perspiciatis corrupti provident
-                                  exercitationem
-                                  excepturi illum nulla fuga, saepe repellat quis enim, fugiat libero voluptatem minus
-                                  mollitia
-                                  animi!
-                              </p>
-                          </div>
-                      </div>
-              </div>                
           </div>
       </div>
-  </div>  
-
-    <!--Footer-->
-    <footer class="footer">
-      <div x-data="{ shown: false }" x-intersect.once="shown = true"
-            class="footer-absolute theme-color d-flex justify-content-end">
-            <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
-            <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
-            <div x-show="shown" class="slideup-3 w-75">
-                <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
-                    <p class="fs-35 fw-bold w-50">Crafting spaces that
-                        the reflect style</p>
-                    <a class="hover-black-bg btn bg-white text-black fs-14 p-3 fw-semibold" href="">Get In Touch <i
-                            class="fa-solid fa-arrow-right"></i></a>
-                </div>
+    <div class="row pt-5 footer-row">
+        
+        <div class="col-12 col-lg-3 logo-column" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <h1 x-cloak x-show="shown" class="slideup-1">LOGO</h1>
+            <p x-cloak x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
+            <div x-cloak x-show="shown" class="d-flex social-icons slideup-1">
+                <a href="#" class="social-links"><i class="fa-brands fa-facebook-f facebook-icon me-3"></i></a></i>
+                <a href="#" class="social-links"><i class="fa-brands fa-twitter ficon me-3"></i></a>
+                <a href="#" class="social-links"><i class="fa-brands fa-vimeo-v ficon me-3"></i></a>
+                <a href="#" class="social-links"></a><i class="fa-brands fa-pinterest-p pinterest-icon"></i></a>
             </div>
         </div>
-      <div class="row pt-5 footer-row">
-          
-          <div class="col-12 col-lg-3 logo-column" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <h1 x-show="shown" class="slideup-1">LOGO</h1>
-              <p x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
-              <div x-show="shown" class="d-flex social-icons slideup-1">
-                  <a href="#" class="social-links"><i class="fa-brands fa-facebook-f facebook-icon me-3"></i></a></i>
-                  <a href="#" class="social-links"><i class="fa-brands fa-twitter ficon me-3"></i></a>
-                  <a href="#" class="social-links"><i class="fa-brands fa-vimeo-v ficon me-3"></i></a>
-                  <a href="#" class="social-links"></a><i class="fa-brands fa-pinterest-p pinterest-icon"></i></a>
-              </div>
-          </div>
-          <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <h4 x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
-              <ul x-show="shown" class="footer-list slideup-3">
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Architecture Plus</li>
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Urban Oasis</li>
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;The Design Studio</li>
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Blueprint Builders</li>
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Renovation Nation</li>
-              </ul>
-          </div>
-          
-          <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <h4 x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
-              <ul x-show="shown" class="footer-list slideup-5">
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;
-                      Spacecraft Studio</li>
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Interiorscape Design</li>
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Architecture Plus</li>
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Dream Home Designs</li>
-                  <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Interior Perfection</li>
-              </ul>
-          </div>
-          <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-              <h4 x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
-              <ul x-show="shown" class="footer-list slideup-7">
-                  <div class="input-group d-flex">
-                      <input type="text" placeholder="Your Email Address" class="input">
-                      <button class="email-button"><i class="fa-solid fa-paper-plane"></i></button>
-                  </div>
-                  <li class="mt-3">
-                      <div class="d-flex">
-                          <i class="fa-solid fa-location-dot mt-3 me-3 add-icon" style="font-size: 25px;"></i>
-                          <div>
-                              <p class="mt-3 mb-0">Address</p>
-                              <span class="contact-info">66 Broklyant,New India</span>
-                          </div>
-                      </div>
-                  </li>
-                  <li class="mt-3">
-                      <div class="d-flex">
-                          <i class="fa-solid fa-phone-flip mt-3 me-3 ph-icon" style="font-size: 25px;"></i>
-                          <div>
-                              <p class="mt-3 mb-0">Phone</p>
-                              <span class="contact-info">012 345 678 9101</span>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-      </div>
-      <img class="rose-shape" src="/images/footer-shape.png" alt="shape of a rose">
-  </footer>
-
-
-    <!-- copyright -->
-    <div class="copyright container-fluid copyright-container">
-        <div class="container">
-            <div class="d-flex flex-column flex-md-column flex-lg-row justify-content-between gap-3">
-                <span class="text-white text-center" id="c-right">&copy BigtechInternational 2024 | All Rights Reserved</span>
-                <div class="d-flex flex-column flex-md-column flex-lg-row justify-content-center text-white">
-                    <div class="d-flex flex-row flex-md-row flex-lg-row justify-content-center text-white">
-                        <p class="me-4 text-center">Terms & Condition</p>
-                        <p class="me-4 text-center">Privacy Policy</p>
-                    </div>
-                    <p class="me-4 text-center">Contact Us</p>
+        <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
+            <ul x-cloak x-show="shown" class="footer-list slideup-3">
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Architecture Plus</li>
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Urban Oasis</li>
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;The Design Studio</li>
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Blueprint Builders</li>
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Renovation Nation</li>
+            </ul>
+        </div>
+        
+        <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
+            <ul x-cloak x-show="shown" class="footer-list slideup-5">
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;
+                    Spacecraft Studio</li>
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Interiorscape Design</li>
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Architecture Plus</li>
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Dream Home Designs</li>
+                <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Interior Perfection</li>
+            </ul>
+        </div>
+        <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
+            <ul x-cloak x-show="shown" class="footer-list slideup-7">
+                <div class="input-group d-flex">
+                    <input type="text" placeholder="Your Email Address" class="input">
+                    <button class="email-button"><i class="fa-solid fa-paper-plane"></i></button>
                 </div>
-            </div>
+                <li class="mt-3">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-location-dot mt-3 me-3 add-icon" style="font-size: 25px;"></i>
+                        <div>
+                            <p class="mt-3 mb-0">Address</p>
+                            <span class="contact-info">66 Broklyant,New India</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="mt-3">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-phone-flip mt-3 me-3 ph-icon" style="font-size: 25px;"></i>
+                        <div>
+                            <p class="mt-3 mb-0">Phone</p>
+                            <span class="contact-info">012 345 678 9101</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-   
-    <!-- jquery -->
-    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <img class="rose-shape" src="images/footer-shape.png" alt="shape of a rose">
+</footer>
 
-    <script src="script.js"></script>
 
-    <!-- Alpine Plugins -->
-    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+  <!-- copyright -->
+  <div class="copyright container-fluid copyright-container">
+      <div class="container">
+          <div class="d-flex flex-column flex-md-column flex-lg-row justify-content-between gap-3">
+              <span class="text-white text-center" id="c-right">&copy BigtechInternational 2024 | All Rights Reserved</span>
+              <div class="d-flex flex-column flex-md-column flex-lg-row justify-content-center text-white">
+                  <div class="d-flex flex-row flex-md-row flex-lg-row justify-content-center text-white">
+                      <p class="me-4 text-center">Terms & Condition</p>
+                      <p class="me-4 text-center">Privacy Policy</p>
+                  </div>
+                  <p class="me-4 text-center">Contact Us</p>
+              </div>
+          </div>
+      </div>
+  </div>
 
-    <!-- Alpine Core -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <!--owl caruosel-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
+  <!-- jquery -->
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+  <!-- fontawesome -->
+  <!-- <script src="https://kit.fontawesome.com/807f2d6ec6.js" crossorigin="anonymous"></script> -->
+
+  <!-- Alpine Plugins -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Alpine Core -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!--owl caruosel-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      $("#icons").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 1000,
+        navigation: true,
+        responsive: {
+          0: {
+            items: 2,
+          },
+          600: {
+            items: 3,
+          },
+          768: {
+            items: 4,
+          },
+          992: {
+            items: 5,
+          },
+          1200: {
+            items: 5,
+          },
+        },
+      });
+
       $(document).ready(function () {
-        $("#icons").owlCarousel({
-          loop: true,
-          margin: 10,
-          autoplay: true,
-          autoplayTimeout: 3000,
-          autoplaySpeed: 1000,
-          navigation: true,
+        $("#port-images").owlCarousel({
+          items: 1, // Display only one item
+          loop: true, // Loop through items
+          margin: 30,
+          autoplay: true, // Autoplay enabled
+          autoplayTimeout: 5000, // Autoplay interval in milliseconds
           responsive: {
             0: {
-              items: 2,
-            },
-            600: {
-              items: 3,
+              items: 1 // Display one item on mobile devices
             },
             768: {
-              items: 4,
-            },
-            992: {
-              items: 5,
-            },
-            1200: {
-              items: 5,
-            },
-          },
-        });
-
-        $(document).ready(function(){
-        $("#port-images").owlCarousel({
-            items: 1, // Display only one item
-            loop: true, // Loop through items
-            margin:30,
-            autoplay: true, // Autoplay enabled
-            autoplayTimeout: 5000, // Autoplay interval in milliseconds
-            responsive:{
-                0:{
-                    items:1 // Display one item on mobile devices
-                },
-                768:{
-                    items:3 // Display three items on tablets and larger screens
-                }
+              items: 3 // Display three items on tablets and larger screens
             }
-        });
-    });
-
-    $('#reviews').owlCarousel({
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplaySpeed: 1000,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
-                    }
-                },
-            });
-        
-
-        
-
-        $("#expert-teams").owlCarousel({
-          loop: true,
-          margin: 50,
-          autoplay: true,
-          autoplayTimeout: 1000,
-          autoplaySpeed: 1000,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 1,
-            },
-            1000: {
-              items: 3,
-            },
-          },
-        });
-
-        $("#news").owlCarousel({
-          loop: true,
-          margin: 10,
-          autoplay: true,
-          autoplayTimeout: 3000,
-          autoplaySpeed: 1000,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 1,
-            },
-            1000: {
-              items: 3,
-            },
-          },
+          }
         });
       });
 
-      document.addEventListener('DOMContentLoaded', function () {
-            var accordionItems = document.querySelectorAll('.accordion-item');
+      $('#reviews').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 1000,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        },
+      });
 
-            accordionItems.forEach(function (item) {
-                item.addEventListener('click', function () {
-                    // Remove active class from all accordion items
-                    accordionItems.forEach(function (el) {
-                        el.classList.remove('active');
-                    });
-                    // Add active class to the clicked accordion item
-                    this.classList.add('active');
-                });
-            });
+
+
+
+      $("#expert-teams").owlCarousel({
+        loop: true,
+        margin: 50,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplaySpeed: 1000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+
+      $("#news").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 1000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var accordionItems = document.querySelectorAll('.accordion-item');
+
+      accordionItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+          // Remove active class from all accordion items
+          accordionItems.forEach(function (el) {
+            el.classList.remove('active');
+          });
+          // Add active class to the clicked accordion item
+          this.classList.add('active');
         });
-    </script>
-  </body>
+      });
+    });
+  </script>
+</body>
+
 </html>

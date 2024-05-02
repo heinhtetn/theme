@@ -56,7 +56,7 @@
           </div>
         </div>
         <!--NavigationBar-->
-        <nav class="navbar navbar-expand-lg bg-white">
+        <!-- <nav class="navbar navbar-expand-lg bg-white">
           <div class="container">
             <a class="navbar-brand" href="">LOGO</a>
             <button
@@ -127,22 +127,22 @@
               </ul>
             </div>
           </div>
-        </nav>
+        </nav> -->
       </header>
     <main>
-        <section class="banner">
-            <img class="w-100 h-100" src="/images/contact-banner.jpg" alt="contact-banner">
-            <div x-data="{ shown: false }" x-intersect.once="shown = true" class="text-white">
-                <h1 x-show="shown" class="slideup-1 fw-bold banner-text text-center">Service</h1>
-                <p x-show="shown" class="slideup-1 banner-breads">Home <i
+        <!-- <section class="banner">
+            <img class="w-100 h-100" src="images/contact-banner.jpg" alt="banner image">
+            <div class="text-white" x-data="{ shown: false }" x-intersect.once="shown = true">
+                <h1 x-cloak x-show="shown" class="slideup-1 fw-bold banner-text text-center">Service</h1>
+                <p x-cloak x-show="shown" class="slideup-1 banner-breads">Home <i
                         class="fa-solid fa-chevron-right fa-xs mx-1"></i> Service</p>
             </div>
-        </section>
+        </section> -->
         <div class="content-wrapper">
             <section class="row gx-4 gy-5 services-section">
                 <div x-data="{ shown: false }" x-intersect.once="shown = true"
                     class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div x-show="shown" class="slideup-1 service secondary-color">
+                    <div x-cloak x-show="shown" class="slideup-1 service secondary-color">
                         <i class="service-icon fa-solid fa-hospital rounded-1"></i>
                         <a class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Architecture
                             Plus</a>
@@ -157,7 +157,7 @@
 
                 <div x-data="{ shown: false }" x-intersect.once="shown = true"
                     class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div x-show="shown" class="slideup-2 service secondary-color">
+                    <div x-cloak x-show="shown" class="slideup-2 service secondary-color">
                         <i class="service-icon fa-solid fa-bed rounded-1"></i>
                         <a class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Urban Oasis</a>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design
@@ -171,7 +171,7 @@
 
                 <div x-data="{ shown: false }" x-intersect.once="shown = true"
                     class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div x-show="shown" class="slideup-3 service secondary-color">
+                    <div x-cloak x-show="shown" class="slideup-3 service secondary-color">
                         <i class="service-icon fa-solid fa-city rounded-1"></i>
                         <a class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Blueprint
                             Builders</a>
@@ -186,7 +186,7 @@
 
                 <div x-data="{ shown: false }" x-intersect.once="shown = true"
                     class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div x-show="shown" class="slideup-4 service secondary-color">
+                    <div x-cloak x-show="shown" class="slideup-4 service secondary-color">
                         <i class="service-icon fa-solid fa-school rounded-1"></i>
                         <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Room Layout</p>
                         <p class="fs-14 fw-thin mt-3" style="color: rgb(84, 89, 95)">This category focuses on the design
@@ -200,7 +200,7 @@
 
                 <div x-data="{ shown: false }" x-intersect.once="shown = true"
                     class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div x-show="shown" class="slideup-5 service secondary-color">
+                    <div x-cloak x-show="shown" class="slideup-5 service secondary-color">
                         <i class="service-icon fa-solid fa-building rounded-1"></i>
                         <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Textile Design
                         </p>
@@ -215,7 +215,7 @@
 
                 <div x-data="{ shown: false }" x-intersect.once="shown = true"
                     class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div x-show="shown" class="slideup-6 service secondary-color">
+                    <div x-cloak x-show="shown" class="slideup-6 service secondary-color">
                         <i class="service-icon fa-solid fa-tree-city rounded-1"></i>
                         <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Lighting Fixtures
                         </p>
@@ -230,7 +230,7 @@
 
                 <div x-data="{ shown: false }" x-intersect.once="shown = true"
                     class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div x-show="shown" class="slideup-7 service secondary-color">
+                    <div x-cloak x-show="shown" class="slideup-7 service secondary-color">
                         <i class="service-icon fa-solid fa-building-columns rounded-1"></i>
                         <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Custom Shelving
                         </p>
@@ -245,7 +245,7 @@
 
                 <div x-data="{ shown: false }" x-intersect.once="shown = true"
                     class=" col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div x-show="shown" class="slideup-8 service secondary-color">
+                    <div x-cloak x-show="shown" class="slideup-8 service secondary-color">
                         <i class="service-icon fa-regular fa-building rounded-1"></i>
                         <p class="hover-theme-color text-black text-decoration-none fs-18 fw-semibold">Wallpaper Install
                         </p>
@@ -264,37 +264,37 @@
         <section class="secondary-color mt-5 w-100" style="padding-bottom: 250px;">
             <div class="content-wrapper pt-5">
                 <div x-data="{ shown: false }" x-intersect.once="shown = true">
-                    <h2 x-show="shown" class="slideup-1 fw-bold">Leave A Comment</h2>
+                    <h2 x-cloak x-show="shown" class="slideup-1 fw-bold">Leave A Comment</h2>
                 </div>
                 <form class="row g-4 mt-3" action="">
                     <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-6">
                         <div class="input-with-icon">
-                            <input x-show="shown" class="slideup-1 form-control border-0 py-3 px-4 fs-14" type="text"
+                            <input x-cloak x-show="shown" class="slideup-1 form-control border-0 py-3 px-4 fs-14" type="text"
                                 placeholder="Name">
-                            <i x-show="shown" class="slideup-1 fa-regular fa-user"></i>
+                            <i x-cloak x-show="shown" class="slideup-1 fa-regular fa-user"></i>
                         </div>
                     </div>
                     <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-6">
-                        <!-- <input x-show="shown" class="slideup-2 form-control border-0 py-3 px-4 fs-14" type="text"
+                        <!-- <input x-cloak x-show="shown" class="slideup-2 form-control border-0 py-3 px-4 fs-14" type="text"
                             placeholder="Email Address"> -->
                         <div class="input-with-icon">
-                            <input x-show="shown" class="slideup-2 form-control border-0 py-3 px-4 fs-14" type="text"
+                            <input x-cloak x-show="shown" class="slideup-2 form-control border-0 py-3 px-4 fs-14" type="text"
                                 placeholder="Email address">
-                            <i x-show="shown" class="slideup-2 fa-regular fa-envelope"></i>
+                            <i x-cloak x-show="shown" class="slideup-2 fa-regular fa-envelope"></i>
                         </div>
                     </div>
                     <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-6">
-                        <!-- <input x-show="shown" class="slideup-3 form-control border-0 py-3 px-4 fs-14" type="text"
+                        <!-- <input x-cloak x-show="shown" class="slideup-3 form-control border-0 py-3 px-4 fs-14" type="text"
                             placeholder="Phone Number"> -->
                         <div class="input-with-icon">
-                            <input x-show="shown" class="slideup-3 form-control border-0 py-3 px-4 fs-14" type="text"
+                            <input x-cloak x-show="shown" class="slideup-3 form-control border-0 py-3 px-4 fs-14" type="text"
                                 placeholder="Phone Number">
-                            <i x-show="shown" class="slideup-3 fa-solid fa-phone"></i>
+                            <i x-cloak x-show="shown" class="slideup-3 fa-solid fa-phone"></i>
                         </div>
                     </div>
                     <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12 col-md-6 col-lg-6">
                         <div class="input-with-icon">
-                            <select x-show="shown"
+                            <select x-cloak x-show="shown"
                                 class="slideup-4 cursor-pointer form-control border-0 py-3 px-4 fs-14">
                                 <option value="" selected style="background-color: red !important;"> Choose Services
                                 </option>
@@ -303,30 +303,30 @@
                                 <option value="">Room Layout</option>
                                 <option value="">Remodelling</option>
                             </select>
-                            <i x-show="shown" class="slideup-4 fa-solid fa-chevron-down"></i>
+                            <i x-cloak x-show="shown" class="slideup-4 fa-solid fa-chevron-down"></i>
                         </div>
 
                     </div>
                     <div x-data="{ shown: false }" x-intersect.once="shown = true" class="col-12">
                         <div class="input-with-icon">
-                            <textarea x-show="shown" class="slideup-5 form-control border-0 py-3 px-4 fs-14" rows="10"
+                            <textarea x-cloak x-show="shown" class="slideup-5 form-control border-0 py-3 px-4 fs-14" rows="10"
                                 placeholder="Message Here"></textarea>
-                            <i x-show="shown" class="slideup-5 fa-solid fa-paper-plane"></i>
+                            <i x-cloak x-show="shown" class="slideup-5 fa-solid fa-paper-plane"></i>
                         </div>
 
                     </div>
 
 
                     <div x-data="{ shown: false }" x-intersect.once="shown = true">
-                        <!-- <button x-show="shown"
+                        <!-- <button x-cloak x-show="shown"
                             class="slideup-6 hover-black-bg theme-color btn text-white fw-semibold px-4 py-3 fs-14">Appointment
                             Now
                             &rarr;</button> -->
 
-                        <div style="position: relative; width: 200px;">
-                            <button x-show="shown"
+                        <div style="position: relative; width: 210px;">
+                            <button x-cloak x-show="shown"
                                 class="w-100 slideup-2 btn theme-color theme-btn text-white px-4 py-3 fw-semibold fs-14">
-                                Appointment now &rarr;
+                                Appointment now <span><i class="fa-solid fa-arrow-right"></i></span>
                             </button>
                         </div>
 
@@ -337,12 +337,12 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer services-footer">
         <div x-data="{ shown: false }" x-intersect.once="shown = true"
               class="footer-absolute theme-color d-flex justify-content-end">
-              <img x-show="shown" class="slideup-1 circle-border" src="/images/circle-border.png" alt="circle border">
-              <img x-show="shown" class="slideup-2 guy-standing" src="/images/guy-standing.png" alt="guy standing">
-              <div x-show="shown" class="slideup-3 w-75">
+              <img x-cloak x-show="shown" class="slideup-1 circle-border" src="images/circle-border.png" alt="circle border">
+              <img x-cloak x-show="shown" class="slideup-2 guy-standing" src="images/guy-standing.png" alt="guy standing">
+              <div x-cloak x-show="shown" class="slideup-3 w-75">
                   <div class="footer-absolute-text d-flex justify-content-evenly align-items-center w-100 h-100">
                       <p class="fs-35 fw-bold w-50">Crafting spaces that
                           the reflect style</p>
@@ -354,9 +354,9 @@
         <div class="row pt-5 footer-row">
             
             <div class="col-12 col-lg-3 logo-column" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <h1 x-show="shown" class="slideup-1">LOGO</h1>
-                <p x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
-                <div x-show="shown" class="d-flex social-icons slideup-1">
+                <h1 x-cloak x-show="shown" class="slideup-1">LOGO</h1>
+                <p x-cloak x-show="shown" class="slideup-1">It is a long established fact that a reader will be distracted</p>
+                <div x-cloak x-show="shown" class="d-flex social-icons slideup-1">
                     <a href="#" class="social-links"><i class="fa-brands fa-facebook-f facebook-icon me-3"></i></a></i>
                     <a href="#" class="social-links"><i class="fa-brands fa-twitter ficon me-3"></i></a>
                     <a href="#" class="social-links"><i class="fa-brands fa-vimeo-v ficon me-3"></i></a>
@@ -364,8 +364,8 @@
                 </div>
             </div>
             <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <h4 x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
-                <ul x-show="shown" class="footer-list slideup-3">
+                <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-3">What We Offers</h4>
+                <ul x-cloak x-show="shown" class="footer-list slideup-3">
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Architecture Plus</li>
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Urban Oasis</li>
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;The Design Studio</li>
@@ -375,8 +375,8 @@
             </div>
             
             <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <h4 x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
-                <ul x-show="shown" class="footer-list slideup-5">
+                <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-5">More Service</h4>
+                <ul x-cloak x-show="shown" class="footer-list slideup-5">
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;
                         Spacecraft Studio</li>
                     <li class="mt-4 list"><i class="fa-solid fa-minus" style="color: #a6a182;font-size: 15px;display: none;"></i><i class="fa-solid fa-chevron-right" style="color: #a6a182;"></i>&nbsp;&nbsp;&nbsp;Interiorscape Design</li>
@@ -386,8 +386,8 @@
                 </ul>
             </div>
             <div class="col-12 col-lg-3" x-data="{ shown: false }" x-intersect.once="shown = true">
-                <h4 x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
-                <ul x-show="shown" class="footer-list slideup-7">
+                <h4 x-cloak x-show="shown" class="footer-title ms-3 slideup-7">Contact</h4>
+                <ul x-cloak x-show="shown" class="footer-list slideup-7">
                     <div class="input-group d-flex">
                         <input type="text" placeholder="Your Email Address" class="input">
                         <button class="email-button"><i class="fa-solid fa-paper-plane"></i></button>
@@ -413,7 +413,7 @@
                 </ul>
             </div>
         </div>
-        <img class="rose-shape" src="/images/footer-shape.png" alt="shape of a rose">
+        <img class="rose-shape" src="images/footer-shape.png" alt="shape of a rose">
     </footer>
   
   
